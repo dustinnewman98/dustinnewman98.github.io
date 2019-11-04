@@ -1,0 +1,53 @@
+.one-project {
+  border: 3px solid $dark-gray;
+  width: 100%;
+  display: flex;
+  max-height: 50vh;
+  margin-bottom: 5em;
+
+  .text-box,
+  .image-box {
+    flex: 1 1 0;
+    padding: 1em;
+  }
+
+  .text-box {
+    .title {
+      font: 36px Objectivity;
+    }
+
+    .subtitle {
+      font-weight: bold;
+    }
+
+    .info {
+      margin-left: 1em;
+    }
+
+    p {
+      font: 16px Objectivity;
+      padding: 1em 0;
+    }
+  }
+
+  .image-box {
+    .black-box {
+      background-color: $dark-gray;
+      height: calc(100% - 2em);
+      margin: 1em;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .proj-img {
+        width: 100% !important;
+        height: auto !important;
+
+        img {
+          object-fit: contain !important;
+        }
+      }
+    }
+  }
+}

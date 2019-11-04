@@ -1,0 +1,34 @@
+.one-post {
+    margin-bottom: 2em;
+    border: 0;
+    box-shadow: none;
+    text-decoration: none;
+    font-weight: normal;
+    display: flex;
+
+    @media #{$mobile-query} {
+        flex-direction: column;
+    }
+
+    .one-post-date {
+        font-family: PlayfairDisplay;
+        margin-right: 2em;
+        color: #333;
+    }
+    .one-post-date-day {
+        font-size: 42px;
+    }
+    .one-post-date-month {
+        font-style: italic;
+        padding-top: 0.2em;
+    }
+    .one-post-blurb {
+        margin-top: 0.7em;
+    }
+    .one-post-blurb-title {
+        font: bold 30px PlayfairDisplay;
+    }
+    .one-post-blurb-subtitle {
+        font: 20px Objectivity;
+    }
+}

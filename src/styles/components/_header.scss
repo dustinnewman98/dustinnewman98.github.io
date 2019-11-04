@@ -1,0 +1,41 @@
+#header {
+    height: 100%;
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        font: $header-font Objectivity;
+        width: 100%;
+        background-color: $bg-color;
+        position: fixed;
+        overflow: auto;
+        white-space: nowrap;
+
+        &:first-child {
+            top: 0;
+        }
+
+        &:nth-child(2) {
+            bottom: 0;
+        }
+
+        a, p {
+            display: inline-block;
+            border: none;
+            box-shadow: none;
+            font-weight: bold;
+
+            &:hover {
+                color: $light-accent;
+            }
+
+            &.selected {
+                color: $accent-color;
+            }
+
+            @media #{$tablet-query} {
+                padding: 0.3em 1em;
+            }
+        }
+    }
+}
