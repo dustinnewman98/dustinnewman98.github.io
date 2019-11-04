@@ -1,4 +1,5 @@
 import React from 'react';
+import resume from "./resume.pdf";
 
 class AboutContent extends React.Component {
   render() {
@@ -27,7 +28,7 @@ class AboutContent extends React.Component {
           <span aria-label="snake" role="img">
             🐍
           </span>{' '}
-          systems for web applications and learning new technologies. 
+          systems for web applications and learning new technologies.
           I tend to obsess over squeezing every last ounce of efficiency{' '}
           <span aria-label="lightning" role="img">
             ⚡
@@ -77,6 +78,7 @@ class AboutContent extends React.Component {
           <span aria-label="mailbox" role="img">
             📬
           </span>
+          Take a look at my <a href={resume}>resume</a>.
         </p>
         <p>
           Thanks!{' '}
