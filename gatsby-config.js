@@ -31,6 +31,15 @@ module.exports = {
         maxWidth: 1080,
       },
     },
-    'gatsby-transformer-remark',
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-prismjs`,
+          }
+        ]
+      }
+    }
   ],
 };
