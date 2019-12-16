@@ -17,7 +17,7 @@
 // Font Face
 // =============================================================================
 
-@mixin font-face($name, $path, $weight: null, $style: null, $exts: eot woff2 woff ttf svg) {
+@mixin font-face($name, $path, $weight: null, $style: null, $exts: eot woff2 woff ttf svg, $display: null) {
 	$src: null;
 
 	$extmods: (
@@ -41,5 +41,6 @@
 		font-style: $style;
 		font-weight: $weight;
 		src: $src;
+		font-display: $display;
 	}
 }
