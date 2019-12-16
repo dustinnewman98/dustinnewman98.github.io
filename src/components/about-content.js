@@ -58,7 +58,7 @@ class AboutContent extends React.Component {
           <a href="https://github.com/dustinnewman98">GitHub</a>{' '}
           <span aria-label="cat" role="img">
             🐱
-          </span>, <a href="https://linkedin.com/dustinnewman98">LinkedIn</a>,
+          </span>, <a href="https://linkedin.com/in/dustinnewman98">LinkedIn</a>,
           or <a href="https://twitter.com/dustinnewman98">Twitter</a>{' '}
           <span aria-label="bird" role="img">
             🐥
