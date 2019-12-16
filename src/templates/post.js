@@ -3,6 +3,7 @@ import { graphql } from 'gatsby';
 import Helmet from 'react-helmet';
 import getSeo from '../utils/get-seo';
 import Layout from '../layouts';
+import PageContent from '../components/page-content';
 
 export default function PostTemplate({ data }) {
   console.log(data);
@@ -23,17 +24,19 @@ export default function PostTemplate({ data }) {
             { name: 'twitter:card', content: 'summary' },
           ]}
         />
-        <div className="post">
-          <h1 className="post-title">{frontmatter.title}</h1>
-          {frontmatter.subtitle ? (
-            <h2 className="post-subtitle">{frontmatter.subtitle}</h2>
-          ) : null}
-          <h3 className="post-date">{frontmatter.date}</h3>
-          <div
-            className="post-content"
-            dangerouslySetInnerHTML={{ __html: post.html }}
-          />
-        </div>
+        <PageContent>
+          <div className="post">
+            <h1 className="post-title">{frontmatter.title}</h1>
+            {frontmatter.subtitle ? (
+              <h2 className="post-subtitle">{frontmatter.subtitle}</h2>
+            ) : null}
+            <h3 className="post-date">{frontmatter.date}</h3>
+            <div
+              className="post-content"
+              dangerouslySetInnerHTML={{ __html: post.html }}
+            />
+          </div>
+        </PageContent>
       </div>
     </Layout>
   );

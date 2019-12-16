@@ -12,9 +12,9 @@ class AboutContent extends React.Component {
           </span>
         </p>
         <p>
-          My name is Dustin and I'm a web and iOS{' '}
-          <span aria-label="apple" role="img">
-            🍏
+          My name is Dustin and I'm a web{' '}
+          <span aria-label="spider" role="img">
+            🕷
           </span>{' '}
           developer who loves making tech that makes a{' '}
           <span aria-label="sparkles" role="img">
@@ -34,12 +34,6 @@ class AboutContent extends React.Component {
             ⚡
           </span>{' '}
           out of anything I make.
-          I also really enjoy{' '}
-          <abbr title="user interface">UI</abbr> design and creating unique and
-          memorable UIs, not just following style guides.{' '}
-          <span aria-label="stop-sign" role="img">
-            🛑
-          </span>
         </p>
         <p>
           I'm a Linguistics{' '}
@@ -50,16 +44,11 @@ class AboutContent extends React.Component {
           <span aria-label="rocket" role="img">
             🚀
           </span>{' '}
-          major at <a href="http://ucla.edu">UCLA</a>, where I'm Online
-          editor for <a href="http://dailybruin.com">the Daily Bruin</a>{' '}
+          major at <a href="https://ucla.edu">UCLA</a>,{' '}
           <span aria-label="bear" role="img">
             🐻
           </span>{' '}
-          managing the entire suite of web products produced there and a member of{' '}
-          <a href="http://www.uclaacm.com/">ACM</a>.{' '}
-          <span aria-label="tools" role="img">
-            🛠
-          </span>
+          graduating June 2020.
         </p>
         <p>
           You can find me on{' '}
@@ -78,7 +67,9 @@ class AboutContent extends React.Component {
           <span aria-label="mailbox" role="img">
             📬
           </span>
-          Take a look at my <a href={resume}>resume</a>.
+        </p>
+        <p>
+          You can find my <a href={resume}>resume here</a>.
         </p>
         <p>
           Thanks!{' '}

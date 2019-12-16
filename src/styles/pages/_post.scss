@@ -1,17 +1,12 @@
 .post {
-    margin: 4em auto;
-    width: 65%;
     text-align: left;
     color: var(--text-color);
-
-    @media #{$mobile-query} {
-        width: 85%;
-    }
 
     .post-title {
         font: bold 42px PlayfairDisplay;
         margin-top: 1em;
     }
+
     .post-subtitle {
         margin-top: 0.5em;
         font: $header-font Objectivity;
