@@ -1,29 +1,17 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import Helmet from 'react-helmet';
-import getSeo from '../utils/get-seo';
 import Layout from '../layouts';
 import PageContent from '../components/page-content';
+import SEO from '../components/seo';
 
 export default function PostTemplate({ data }) {
-  console.log(data);
   const post = data.markdownRemark;
   const frontmatter = post.frontmatter;
 
   return (
     <Layout>
       <div>
-        <Helmet
-          title={getSeo(frontmatter.title)}
-          meta={[
-            { name: 'og:title', content: `${frontmatter.title}` },
-            { name: 'twitter:title', content: `${frontmatter.title}` },
-            { name: 'description', content: `${frontmatter.subtitle}` },
-            { name: 'og:description', content: `${frontmatter.subtitle}` },
-            { name: 'twitter:description', content: `${frontmatter.subtitle}` },
-            { name: 'twitter:card', content: 'summary' },
-          ]}
-        />
+        <SEO {...post.frontmatter} article={true} />
         <PageContent>
           <div className="post">
             <h1 className="post-title">{frontmatter.title}</h1>
@@ -53,6 +41,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         title
         subtitle
+        description
       }
     }
   }

@@ -1,6 +1,7 @@
 ---
 title: "Welcome to my blog!"
 subtitle: "Please excuse the dust..."
+description: "Intro post to my new blog."
 date: "2018-06-24"
 ---
 

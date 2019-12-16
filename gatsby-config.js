@@ -1,8 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: 'DUSTIN NEWMAN',
+    title: 'Dustin Newman',
+    titleTemplate: '%s | Dustin Newman',
     author: 'Dustin Newman',
-    description: 'LA-based web and iOS developer (will work for chai lattes).',
+    description: 'Software engineer, UCLA Computer Science and Linguistics major, nerd.',
+    url: 'https://dustinnewman.io',
+    twitterUsername: '@dustinnewman98'
   },
   plugins: [
     'gatsby-plugin-react-helmet',

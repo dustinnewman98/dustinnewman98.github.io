@@ -1,10 +1,9 @@
 ---
-title: 'meow'
-subtitle: 'Social media scheduler for the Daily Bruin'
-img: './meow.png'
-role: 'Assistant Editor'
+title: meow
+subtitle: Social media scheduler for the Daily Bruin
+img: ./meow.png
+role: Project Lead
 stack: Django, React, Postgres
-github: 'dailybruin/meow'
-live: 'meow.dailybruin.com'
-slug: /projects/meow
+github: dailybruin/meow
+live: https://meow.dailybruin.com
 ---

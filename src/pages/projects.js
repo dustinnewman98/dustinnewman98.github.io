@@ -12,7 +12,7 @@ function renderGithub(github) {
       <span aria-label="octopus" role="img">
         🐙
       </span>{' '}
-      Github: <a href={`https://www.github.com/${github}`}>{github}</a>
+      GitHub: <a href={`https://www.github.com/${github}`}>{github}</a>
     </p>
   ) : null;
 }
