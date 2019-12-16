@@ -6,7 +6,7 @@
         justify-content: space-between;
         font: $header-font Objectivity;
         width: 100%;
-        background-color: $bg-color;
+        background-color: var(--bg-color);
         position: fixed;
         overflow: auto;
         white-space: nowrap;
@@ -24,13 +24,14 @@
             border: none;
             box-shadow: none;
             font-weight: bold;
+            color: var(--text-color);
 
             &:hover {
-                color: $light-accent;
+                color: var(--light-accent);
             }
 
             &.selected {
-                color: $accent-color;
+                color: var(--accent-color);
             }
 
             @media #{$tablet-query} {

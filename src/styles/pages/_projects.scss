@@ -49,7 +49,7 @@
       display: none;
     }
 
-    background-color: $bg-color;
+    background-color: var(--bg-color);
     height: 250px;
 
     .proj-img {

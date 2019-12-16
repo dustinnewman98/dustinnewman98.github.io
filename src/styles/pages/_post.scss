@@ -2,6 +2,7 @@
     margin: 4em auto;
     width: 65%;
     text-align: left;
+    color: var(--text-color);
 
     @media #{$mobile-query} {
         width: 85%;
@@ -14,14 +15,14 @@
     .post-subtitle {
         margin-top: 0.5em;
         font: $header-font Objectivity;
-        color: $dark-gray;
     }
+
     .post-date {
         font-family: PlayfairDisplay;
-        color: $dark-gray;
         margin-top: 0.7em;
         margin-bottom: 1.3em;
     }
+
     .post-content {
         font: 1.2em Lora;
         line-height: 1.7;

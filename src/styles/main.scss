@@ -2,19 +2,36 @@
 @import 'variables';
 @import 'folders';
 
+:root {
+    color-scheme: light dark;
+    --bg-color: #FCFCFF;
+    --text-color: #000000;
+    --dark-gray: #333333;
+    --accent-color: #1B9CFC;
+    --light-accent: #5DA9E9;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: #121212;
+        --text-color: #fcfcfc;
+    }
+}
+
 body {
     margin: 0;
-    background-color: $bg-color;
+    background-color: var(--bg-color);
+
 
     * {
         margin: 0;
     }
 
     a {
-        border-bottom: 1px solid $accent-color;
-        box-shadow: inset 0 -2px 0px 0px $accent-color;
+        border-bottom: 1px solid var(--accent-color);
+        box-shadow: inset 0 -2px 0px 0px var(--accent-color);
         font-weight: bold;
         text-decoration: none;
-        color: $dark-gray;
+        color: var(--text-color);
     }
 }
