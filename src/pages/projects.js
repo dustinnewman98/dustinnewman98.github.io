@@ -7,24 +7,65 @@ import Link from 'gatsby-link';
 import Img from 'gatsby-image';
 
 function renderGithub(github) {
-  return (
+  return github ? (
     <p>
       <span aria-label="octopus" role="img">
         🐙
       </span>{' '}
       Github: <a href={`https://www.github.com/${github}`}>{github}</a>
     </p>
-  );
+  ) : null;
 }
 
 function renderLive(live) {
-  return (
+  return live ? (
     <p>
       <span aria-label="sparkles" role="img">
         ✨
       </span>{' '}
       Live at: <a href={live}>{live}</a>
     </p>
+  ) : null;
+}
+
+function renderTextBox(project) {
+  return (
+    <div className="text-box">
+      <Link to={`/projects${project.fields.slug}`}>
+        <h2 className="title">{project.frontmatter.title}</h2>
+      </Link>
+      : <p className="subtitle">{project.frontmatter.subtitle}</p>
+      <div className="info">
+        <p>
+          <span aria-label="bread" role="img">
+            🍞
+          </span>{' '}
+          Role: {project.frontmatter.role}
+        </p>
+        <p>
+          <span aria-label="wizard" role="img">
+            🧙
+          </span>{' '}
+          Worked with: {project.frontmatter.stack}
+        </p>
+        {renderGithub(project.frontmatter.github)}
+        {renderLive(project.frontmatter.live)}
+      </div>
+    </div>
+  )
+}
+
+function renderProject(project) {
+  return (
+    <div className="one-project">
+      {renderTextBox(project)}
+      <div className="image-box">
+        <Img
+          className="proj-img"
+          fluid={project.frontmatter.img.childImageSharp.fluid}
+        />
+      </div>
+    </div>
   );
 }
 
@@ -35,50 +76,9 @@ export default function Projects({ data }) {
     <Layout>
       <PageContent>
         <PageHeader text="My Projects" emoji="🤖" />
-        <div className="project-wrapper">
-          {projects
-            .filter(project => project.node.frontmatter.title.length > 0)
-            .map(({ node: project }) => {
-              return (
-                <div className="one-project">
-                  <div className="text-box">
-                    <Link to={`/projects${project.fields.slug}`}>
-                      <h1 className="title">{project.frontmatter.title}</h1>
-                    </Link>
-                    <div className="info">
-                      <p className="subtitle">{project.frontmatter.subtitle}</p>
-                      <p>
-                        <span aria-label="bread" role="img">
-                          🍞
-                        </span>{' '}
-                        Role: {project.frontmatter.role}
-                      </p>
-                      <p>
-                        <span aria-label="wizard" role="img">
-                          🧙
-                        </span>{' '}
-                        Worked with: {project.frontmatter.stack}
-                      </p>
-                      {project.frontmatter.github === null
-                        ? null
-                        : renderGithub(project.frontmatter.github)}
-                      {project.frontmatter.live === null
-                        ? null
-                        : renderLive(project.frontmatter.live)}
-                    </div>
-                  </div>
-                  <div className="image-box">
-                    <div className="black-box">
-                      <Img
-                        className="proj-img"
-                        fluid={project.frontmatter.img.childImageSharp.fluid}
-                      />
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
-        </div>
+        {projects
+          .filter(project => project.node.frontmatter.title.length > 0)
+          .map(({ node: project }) => renderProject(project))}
       </PageContent>
     </Layout>
   );
@@ -102,7 +102,7 @@ export const projQuery = graphql`
             img {
               publicURL
               childImageSharp {
-                fluid(maxWidth: 700) {
+                fluid(maxHeight: 200) {
                   ...GatsbyImageSharpFluid_noBase64
                 }
               }

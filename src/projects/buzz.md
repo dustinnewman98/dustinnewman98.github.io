@@ -1,7 +1,7 @@
 ---
-title: 'Buzz'
+title: Buzz
 subtitle: 'Daily production base for Daily Bruin'
-img: './buzz.png'
+img: ./buzz.png
 role: 'Creator'
 stack: MongoDB, Express, React, Node
 github: 'dailybruin/buzz'

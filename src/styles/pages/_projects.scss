@@ -1,9 +1,12 @@
 .one-project {
-  border: 3px solid $dark-gray;
   width: 100%;
   display: flex;
-  max-height: 50vh;
-  margin-bottom: 5em;
+
+  @media (max-width: 700px) {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1em;
+  }
 
   .text-box,
   .image-box {
@@ -12,8 +15,15 @@
   }
 
   .text-box {
-    .title {
-      font: 36px Objectivity;
+    @media (max-width: 700px) {
+      padding: 0.3em;
+    }
+
+    font-family: "Objectivity";
+    word-break: break-word;
+
+    .title, .subtitle {
+      display: inline;
     }
 
     .subtitle {
@@ -25,28 +35,31 @@
     }
 
     p {
-      font: 16px Objectivity;
-      padding: 1em 0;
+      font-size: 16px;
+      padding: 0.5em 0;
+
+      @media (max-width: 700px) {
+        padding: auto;
+      }
     }
   }
 
   .image-box {
-    .black-box {
-      background-color: $bg-color;
-      height: calc(100% - 2em);
-      margin: 1em;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+    @media (max-width: 700px) {
+      display: none;
+    }
 
-      .proj-img {
-        width: 100% !important;
-        height: auto !important;
+    background-color: $bg-color;
+    height: 250px;
 
-        img {
-          object-fit: contain !important;
-        }
+    .proj-img {
+      height: 100%;
+
+      img {
+        height: 100%;
+        width: auto;
+        object-fit: contain !important;
+        object-position: center !important;
       }
     }
   }
