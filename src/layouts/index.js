@@ -13,6 +13,7 @@ export default class Layout extends React.Component {
         />
         <Header />
         {this.props.children}
+        <footer>Objectivity</footer>
       </div>
     );
   }

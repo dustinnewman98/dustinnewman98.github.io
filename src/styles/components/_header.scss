@@ -4,7 +4,7 @@
     .nav {
         display: flex;
         justify-content: space-between;
-        font: $header-font Objectivity;
+        font-size: $header-font;
         width: 100%;
         background-color: var(--bg-color);
         overflow: auto;
