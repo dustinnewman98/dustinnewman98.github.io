@@ -4,6 +4,7 @@ import Link from 'gatsby-link';
 import PageHeader from '../components/page-header';
 import PageContent from '../components/page-content';
 import Layout from '../layouts';
+import SEO from '../components/seo';
 
 function getMonth(input) {
   let d = new Date(input);
@@ -34,6 +35,7 @@ export default function Posts({ data }) {
 
   return (
     <Layout>
+      <SEO title="My Posts" description="List of posts by Dustin Newman." />
       <PageContent>
         <PageHeader text="My Posts" emoji="💌" />
         {posts

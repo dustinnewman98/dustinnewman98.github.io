@@ -5,6 +5,7 @@ import PageContent from '../components/page-content';
 import Layout from '../layouts';
 import Link from 'gatsby-link';
 import Img from 'gatsby-image';
+import SEO from '../components/seo';
 
 function renderGithub(github) {
   return github ? (
@@ -74,6 +75,7 @@ export default function Projects({ data }) {
 
   return (
     <Layout>
+      <SEO title="My Projects" description="List of projects by Dustin Newman." />
       <PageContent>
         <PageHeader text="My Projects" emoji="🤖" />
         {projects

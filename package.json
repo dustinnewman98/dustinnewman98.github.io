@@ -8,6 +8,7 @@
     "gatsby-image": "^2.0.15",
     "gatsby-link": "^2.0.4",
     "gatsby-plugin-catch-links": "^2.0.5",
+    "gatsby-plugin-feed": "^2.3.25",
     "gatsby-plugin-react-helmet": "^3.0.0",
     "gatsby-plugin-sass": "^2.0.1",
     "gatsby-plugin-sharp": "^2.0.7",

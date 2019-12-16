@@ -24,6 +24,7 @@ const SEO = ({ title, description, pathname, article }) => (
             return (
                 <>
                     <Helmet title={seo.title} titleTemplate={titleTemplate}>
+                        <html lang="en" />
                         <meta name="description" content={seo.description} />
                         {seo.url && <meta property="og:url" content={seo.url} />}
                         {(article ? true : null) && (
