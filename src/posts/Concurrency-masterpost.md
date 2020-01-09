@@ -1,8 +1,8 @@
 ---
 title: Concurrency Masterpost
-subtitle:
-description:
-date:
+subtitle: Threads and locks and actors, oh my!
+description: Overview of concurrency mechanisms including green threads, parallelism, and the actor model.
+date: 2020-01-10
 ---
 
 Concurrency is at the heart of network programming. Most of networking is presumably I/O bound and as such it's very easy to waste precious CPU cycles simply waiting for responses. To solve this, we structure our programs to be **concurrent**, dividing a problem into independent sections such that each concurrent unit may execute the sections in any order. Different concurrency and concurrency control mechanisms have been proposed in the past 60 years and I thought it would be helpful to have a reference point comparing them all. This post will be broken up into two primary sections: "concurrency" and "concurrency control."
@@ -35,13 +35,54 @@ If you are working with only one CPU, however, parallelism is almost impossible.
 Preemptive schedulers are by far the most common for popular operating systems. They operate by forcibly interrupting tasks to schedule a new one, trying to operate as fairly as possible generally. They usually make some kind of optimization whereby a task that makes an I/O request is "blocked" from running until the request returns with something useful. These are used for all kernel threads and Erlang's green threads (called "processes").
 
 #### Cooperative
+Cooperative schedulers on the other hand wait for a thread or process to explicitly *yield* to them.
 
 ## Concurrency Control
+Now that we’ve seen how to achieve concurrency, let’s see how to achieve it *well*. There are two extremely broad and far from comprehensive categories I’ll be covering: methods which require sharing memory and methods which require message passing. 
+
+However, before we proceed, a warning: shared memory is generally regarded as less safe than message passing, although more efficient in terms of memory usage. Message passing eliminates whole classes of common concurrency bugs associated with shared memory. 
+
 ### Shared Memory
-#### Mutexes
+This class of concurrency control mechanisms all depend on concurrent tasks sharing memory and having access to the same address space. As we saw above, this is usually not a problem as threads already occupy the same address space. 
+
 #### Spinlock
+A spinlock is the simplest of all shared memory mechanisms, which can be a boost for developer efficiency but a drag for performance. Threads lock the spinlock and then have exclusive access to its contents until they unlock it. Once the thread unlocks the spinlock, *all waiting threads* are woken up and it becomes a Hunger Games style race for whichever one acquires it. In other words, the order of acquisition is NOT fair and is not FIFO. When threads are waiting for the lock, they enter an infinite while loop, doing nothing except "spinning" and wasting CPU cycles.
+
+```js
+class Spinlock {
+    constructor() {
+        this.locked = false
+    }
+
+    lock() {
+        while (this.locked == true) {
+        // wait or spin
+        }
+        this.locked = true
+    }
+
+    unlock() {
+        while (this.locked == false) {
+        // wait or spin
+        }
+        this.locked = false
+    }
+}
+```
+
+#### Mutex
+A mutex (or **mut**ual **ex**clusion lock) is very simple to a spinlock, with an extra optimization. Rather than wait for the lock to be free and waste valuable CPU cycles on what is essentially a fancy while loop (see above implementation), we can instead form a queue of threads waiting and then yield to the OS, allowing the thread actually holding the mutex to finish as quickly as possible.
+
 #### Read-Write Lock
+The main problem with shared memory is not inherently that it is shared but that it’s **mutable**. The only reason a thread needs a lock to access a value is because that value may have changed (mutated). If we can make guarantees about read-only access to the value, we can make our lock usage more efficient and finely tuned. A read-write lock is a mutex which grants unlimited access to threads only reading a value (these threads are called "readers") but still allows only one thread to write to the value ("writers"). When a writer needs the lock, it waits on all readers to finish using it (unlock it) and then acquires it. All other readers and writers are now blocked from acquiring the lock until this writer is done. 
+
+If you use Rust, then this sort of talk might sound strangely familiar. And you would be right! This concept of multiple readers and single writers is analogous to Rust's rules about mutable references. Just like read-write locks allow multiple readers, Rust allows multiple immutable references to exist at once. And just like read-write locks only allow one writer, Rust will only allow one mutable reference at a time. So the analogy of read:immutable reference::write:mutable reference is a handy way of thinking about this. [^7]
+
+Read-write locks can potentially allow your program to achieve greater concurrency, as more threads can read the value than can with a mutex. For example, if you have a value that is (1) frequently read, (2) rarely updated, and (3) used to perform an I/O operation while still holding a read lock, then a read-write lock is ideal. However, if there are many more writes than reads, then the added overhead of the more complex read-write lock operations can cause slight performance losses. This is also the case if you usually only have one reader at a time; the overhead of the lock will dominate the read operation itself. 
+
 #### Semaphore
+So far, we have only seen single-resource locks. What if you have multiple related values you want to protect? For example, you have an array which some threads will dump data into and some will take data out of. This is known as a "producer-consumer queue." Imagine the producers as people ordering coffee at Starbucks (putting orders into the array) and the consumers as the baristas making the coffee (taking orders out of the array to complete them). For our baristas' sake, we'll limit the maximum number of orders to 8 at a time.
+
 #### Software Transactional Memory
 ### Message Passing
 #### Actor Model
@@ -62,3 +103,5 @@ CSP has two forms of choice (internal/external or nondeterministic/deterministic
 [^5]: http://downloads.haskell.org/~ghc/7.4.1/docs/html/users_guide/runtime-control.html
 
 [^6]: http://erlang.org/doc/efficiency_guide/processes.html
+
+[^7]: "read:immutable::write:mutable" reads as "read is to immutable as write is to mutable." You can read more about English analogy format [here](https://www.800score.com/gre-guidec2b.html).
