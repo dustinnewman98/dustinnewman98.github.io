@@ -14,6 +14,7 @@
     "gatsby-plugin-sharp": "^2.0.7",
     "gatsby-plugin-typography": "^2.2.0",
     "gatsby-remark-copy-linked-files": "^2.0.5",
+    "gatsby-remark-footnotes": "^0.0.7",
     "gatsby-remark-images": "^2.0.4",
     "gatsby-remark-prismjs": "^3.3.27",
     "gatsby-source-filesystem": "^2.0.5",

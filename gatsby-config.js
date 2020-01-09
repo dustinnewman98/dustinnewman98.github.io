@@ -40,6 +40,15 @@ module.exports = {
         plugins: [
           {
             resolve: `gatsby-remark-prismjs`,
+          },
+          {
+            resolve: `gatsby-remark-footnotes`,
+            options: {
+              footnoteBackRefPreviousElementDisplay: "inline",
+              footnoteBackRefDisplay: "inline",
+              footnoteBackRefInnerText: "return",
+              footnoteBackRefInnerTextStartPosition: "front",
+            }
           }
         ]
       }
