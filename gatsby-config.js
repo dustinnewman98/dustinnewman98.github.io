@@ -46,8 +46,7 @@ module.exports = {
             options: {
               footnoteBackRefPreviousElementDisplay: "inline",
               footnoteBackRefDisplay: "inline",
-              footnoteBackRefInnerText: "return",
-              footnoteBackRefInnerTextStartPosition: "front",
+              footnoteBackRefInnerText: "[return]"
             }
           }
         ]
