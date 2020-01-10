@@ -48,25 +48,25 @@ This class of concurrency control mechanisms all depend on concurrent tasks shar
 #### Spinlock
 A spinlock is the simplest of all shared memory mechanisms, which can be a boost for developer efficiency but a drag for performance. Threads lock the spinlock and then have exclusive access to its contents until they unlock it. Once the thread unlocks the spinlock, *all waiting threads* are woken up and it becomes a Hunger Games style race for whichever one acquires it. In other words, the order of acquisition is NOT fair and is not FIFO. When threads are waiting for the lock, they enter an infinite while loop, doing nothing except "spinning" and wasting CPU cycles.
 
-```js
-class Spinlock {
-    constructor() {
-        this.locked = false
-    }
+Take a look at the very simple implementation for a spinlock below to get a more concrete idea of how they work. I used Go to implement it, partially because I used it as the green thread spokesperson and partially because its syntax is one of the more concise out there.
 
-    lock() {
-        while (this.locked == true) {
-        // wait or spin
-        }
-        this.locked = true
-    }
+```go
+type Spinlock struct {
+    locked bool
+}
 
-    unlock() {
-        while (this.locked == false) {
+func (s *Spinlock) lock() {
+    for s.locked == true {
         // wait or spin
-        }
-        this.locked = false
     }
+    s.locked = true
+}
+
+func (s *Spinlock) unlock() {
+    for s.locked == false {
+        // wait or spin
+    }
+    s.locked = false
 }
 ```
 
@@ -81,16 +81,135 @@ If you use Rust, then this sort of talk might sound strangely familiar. And you 
 Read-write locks can potentially allow your program to achieve greater concurrency, as more threads can read the value than can with a mutex. For example, if you have a value that is (1) frequently read, (2) rarely updated, and (3) used to perform an I/O operation while still holding a read lock, then a read-write lock is ideal. However, if there are many more writes than reads, then the added overhead of the more complex read-write lock operations can cause slight performance losses. This is also the case if you usually only have one reader at a time; the overhead of the lock will dominate the read operation itself. 
 
 #### Semaphore
-So far, we have only seen single-resource locks. What if you have multiple related values you want to protect? For example, you have an array which some threads will dump data into and some will take data out of. This is known as a "producer-consumer queue." Imagine the producers as people ordering coffee at Starbucks (putting orders into the array) and the consumers as the baristas making the coffee (taking orders out of the array to complete them). For our baristas' sake, we'll limit the maximum number of orders to 8 at a time.
+So far, we have only seen single-resource locks. What if you have multiple related values you want to protect? For example, you have an array which some threads will dump data into and some will take data out of. This is known as a "producer-consumer queue." Imagine the producers as people ordering coffee at Starbucks (putting orders into the array) and the consumers as the baristas making the coffee (taking orders out of the array to complete them). For our baristas' sake, we'll limit the maximum number of orders to eight at a time. As long as there are fewer than eight orders, any call to place an order will succeed first try and return. However, if there are eight orders, any customer wanting to place an order will have to wait until one is completed. For this reason, we will call the function to order `wait`. When our baristas are done with an order, they call out the name of the customer who ordered it. In other words, they signal to the customers that their order is ready. For this reason, this function is called `signal`. This will also free up one spot in the queue of orders.
+
+Check out the Go implementation below to see a more concrete example:
+
+```go
+type Semaphore struct {
+    capacity int32
+}
+
+func (s *Semaphore) wait() {
+    s.capacity -= 1
+    for s.capacity < 0 {
+
+    }
+}
+
+func (s *Semaphore) signal() {
+    s.capacity += 1
+}
+
+starbucks_semaphore := Semaphore{8}
+```
 
 #### Software Transactional Memory
+Until this point, "shared memory" has been synonymous with "locks." There is a developing effort however in using  shared memory in concurrent programs *without locks.* Heresy, I know! How is this possible? And what sort of witchcraft begets this magic? Well, it turns out, a very complex kind.
+
+Software transactional memory uses lockless mechanisms to control concurrent access to shared memory. Its core is the **transaction**, an object representing a value at a given time. Think of a transaction as a JavaScript object (dictionary, hash table, map) with three keys:
+
+```json
+{
+    "variable": "X",
+    "version": 1,
+    "value": 13
+}
+```
+
+Here, our variable is the creatively named "X" and we have the original, unmodified version of it with a value of 13. Lucky us! When a thread wants to access any variable within an STM block (we'll get to this later), it really gets back a copy from the runtime. Now, the thread can do whatever it wants on the copy of the real object. After it's done, it needs to **commit** its modifications (think of this in the Git sense). If the version the copy has matches the version of the original, then the change is committed. If not, our original object has been modified and the thread will re-try its operations with a new copy (probably with version 2, for example).
+
+STM operates on the level of blocks within the code that are marked to run within a transaction. We call these blocks **atomic**, as they assume that their operations are uninterruptable, indivisible, and completely isolated from other threads. Although Clojure has native implementation of STM and I do love LISPs, I am going to follow convention and use a Go-esque syntax. (This is not valid Go!)
+
+```go
+has_name := make(map[string]bool)
+
+func update_map() {
+    atomic {
+        has_name["Daenerys"] = true
+        has_name["Arya"] = false
+    }
+}
+
+func read_map() {
+    atomic {
+        if has_name["Daenerys"] {
+            time.Sleep(1 * time.Second)
+            if has_name["Arya"] == false {
+                fmt.Println("A girl has no name.")
+            }
+        }
+    }
+}
+
+func main() {
+    go update_map()
+    go read_map()
+}
+```
+
+There are several drawbacks to STM. First, the atomic blocks must be "pure," which means they cannot have any side effects (i.e. database or other network calls). This can be difficult to do, especially in real-world web-based applications. Further, STM will typically retry atomic blocks several times before committing, which can take a lot of time. This is to say that STM is really only useful if you do not anticipate heavily contested resources. Currently, it only has core language support in Clojure with its `dosync` macro and Haskell. 
+
 ### Message Passing
+Now to the <strike>better</strike> other side of concurrency control! Message passing differs from shared memory in that it emphasizes:
+
+- immutable data
+- explicit communication
+- truly isolated processes
+
+Rather than "communicating by sharing memory", this "sharing memory by communicating." [^8] (We do not actually share memory.) In this version, our threads do not have access to the same memory space and only communicate by explicitly sending messages to each other. 
+
 #### Actor Model
+Most famously implemented by Erlang (although this is somewhat contentious for reasons not in scope here), the actor model states that "everything is an actor." If this sounds similar to Java's "everything is an object," then you are very right! <strike>More so than Sun Microsystems who warped the entire meaning of the word "object" to market their product. [^9]</strike> But we won't get into that here either.
+
+So, everything is an actor. Imagine you have all your threads in their own rooms and the only way they can communicate is through their mailbox. This mailbox is infinitely big (within the RAM of your computer). Also, it does not matter where in the world the mailbox is, all other mailboxes can reach it if they know its address. Dropping the analogy, any Erlang process can talk to any other Erlang process, *even if they are on different machines.* I have written up a simple worker node example below to see, although it is in Elixir (a modern language running on the same VM as Erlang) which many find harder to understand than, say, C or Python. Believe it or not, Elixir is an improvement over Erlang syntax.
+
+```elixir
+def worker(parent) do
+    :timer.sleep(1000)
+    # this is asynchronous/non-blocking
+    send(parent, {:done, self()})
+end
+
+parent = self()
+_child = spawn fn -> worker(parent) end
+
+# this is synchronous/blocking
+receive do
+    {:done, _} -> IO.puts "Done!"
+end
+```
+
+A common concern among developers is that message passing entails too great a performance hit to use in production systems. I too was guilty of this assumption until I read Joe Armstrong's paper on the topic. [^10] It takes 3 *micro*seconds to create a process with Erlang (up to 30k processes) and just 0.8 microseconds to send a message. For most applications, I imagine this will be more than acceptable.
+
 #### Communicating Sequential Processes
-Processes in CSP are anonymous, while actors have identities. So, CSP uses explicit channels for message passing, whereas with Actors you send messages directly.
-With CSP the sender cannot transmit a message until the receiver is ready to accept it. Actors can send messages asynchronously
-#### CCS
-CSP has two forms of choice (internal/external or nondeterministic/deterministic). In CCS the two ideas are fused into one. I think that is an irreconcilable difference. (src https://cs.stackexchange.com/questions/465/similarities-and-differences-in-major-process-algebras)
+Communicating sequential processes (CSP) are nearly identical to the actor model in practice, with two key differences:
+
+1. CSP channels are anonymous; actors have identities (PIDs)
+2. CSP sends synchronously; actors send asynchronously
+
+For example, in the above example in our worker process, we do not block on the `send` operation. It just places a message in the mailbox of the parent and continues executing. In CSP, however, sending does block. For example, in the Go code below:
+
+```go
+func worker(q chan int) {
+    // synchronous/blocking
+    job := <- q
+    fmt.Println("Received job ", job)
+}
+
+func main() {
+    q := make(chan int)
+    go worker(q)
+
+    // also synchronous/blocking
+    q <- 1
+}
+```
+
+If this were the actor model, the main function would not block on sending 1 to the channel. Note that in both models, receiving is synchronous.
+
+## Thanks for reading!
+This marks the end of our long journey through the various ways to achieve concurrency and to synchronize concurrent programs. I hope this was helpful!
 
 [^1]: https://github.com/rust-lang/rust/blob/caa231d998a5e853c7ba1455d7a05b500df9d63c/src/libstd/thread/mod.rs#L122
 
@@ -105,3 +224,9 @@ CSP has two forms of choice (internal/external or nondeterministic/deterministic
 [^6]: http://erlang.org/doc/efficiency_guide/processes.html
 
 [^7]: "read:immutable::write:mutable" reads as "read is to immutable as write is to mutable." You can read more about English analogy format [here](https://www.800score.com/gre-guidec2b.html).
+
+[^8]: https://blog.golang.org/share-memory-by-communicating
+
+[^9]: Joe Armstrong is not quite so bold, but you can listen to his interview [here](https://www.infoq.com/interviews/johnson-armstrong-oop/)
+
+[^10]: http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.116.1969&rep=rep1&type=pdf

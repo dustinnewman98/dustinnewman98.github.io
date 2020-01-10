@@ -34,10 +34,11 @@
     }
 
     .one-post-blurb-title {
-        font: bold 30px PlayfairDisplay;
+        font-family: "PlayfairDisplay";
     }
 
     .one-post-blurb-subtitle {
-        font-size: 20px;
+        font-weight: normal;
+        // font-size: 1.3em;
     }
 }

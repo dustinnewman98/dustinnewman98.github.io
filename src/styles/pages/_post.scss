@@ -1,5 +1,6 @@
 .post {
     text-align: left;
+    word-wrap: break-word;
     color: var(--text-color);
 
     .post-title {
@@ -9,7 +10,7 @@
 
     .post-subtitle {
         margin-top: 0.5em;
-        font-size: $header-font;
+        font-weight: normal;
     }
 
     .post-date {

@@ -12,7 +12,7 @@ export default function PostTemplate({ data }) {
     <Layout>
       <SEO {...post.frontmatter} article={true} />
       <PageContent>
-        <div className="post">
+        <article className="post">
           <h1 className="post-title">{frontmatter.title}</h1>
           {frontmatter.subtitle ? (
             <h2 className="post-subtitle">{frontmatter.subtitle}</h2>
@@ -22,7 +22,7 @@ export default function PostTemplate({ data }) {
             className="post-content"
             dangerouslySetInnerHTML={{ __html: post.html }}
           />
-        </div>
+        </article>
       </PageContent>
     </Layout>
   );
