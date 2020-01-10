@@ -116,7 +116,7 @@ Software transactional memory uses lockless mechanisms to control concurrent acc
 
 Here, our variable is the creatively named "X" and we have the original, unmodified version of it with a value of 13. Lucky us! When a thread wants to access any variable within an STM block (we'll get to this later), it really gets back a copy from the runtime. Now, the thread can do whatever it wants on the copy of the real object. After it's done, it needs to **commit** its modifications (think of this in the Git sense). If the version the copy has matches the version of the original, then the change is committed. If not, our original object has been modified and the thread will re-try its operations with a new copy (probably with version 2, for example).
 
-STM operates on the level of blocks within the code that are marked to run within a transaction. We call these blocks **atomic**, as they assume that their operations are uninterruptable, indivisible, and completely isolated from other threads. Although Clojure has native implementation of STM and I do love LISPs, I am going to follow convention and use a Go-esque syntax. (This is not valid Go!)
+STM operates on the level of blocks within the code that are marked to run within a transaction. We call these blocks **atomic**, as they assume that their operations are uninterruptible, indivisible, and completely isolated from other threads. Although Clojure has native implementation of STM and I do love LISPs, I am going to follow convention and use a Go-esque syntax. (This is not valid Go!)
 
 ```go
 has_name := make(map[string]bool)
