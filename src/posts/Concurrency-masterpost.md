@@ -63,9 +63,6 @@ func (s *Spinlock) lock() {
 }
 
 func (s *Spinlock) unlock() {
-    for s.locked == false {
-        // wait or spin
-    }
     s.locked = false
 }
 ```
