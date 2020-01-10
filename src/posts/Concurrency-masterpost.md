@@ -154,7 +154,7 @@ Now to the <strike>better</strike> other side of concurrency control! Message pa
 - explicit communication
 - truly isolated processes
 
-Rather than "communicating by sharing memory", this "sharing memory by communicating." [^8] (We do not actually share memory.) In this version, our threads do not have access to the same memory space and only communicate by explicitly sending messages to each other. 
+Rather than "communicating by sharing memory", this is "sharing memory by communicating." [^8] (We do not actually share memory.) In this version, our threads do not have access to the same memory space and only communicate by explicitly sending messages to each other. 
 
 #### Actor Model
 Most famously implemented by Erlang (although this is somewhat contentious for reasons not in scope here), the actor model states that "everything is an actor." If this sounds similar to Java's "everything is an object," then you are very right! <strike>More so than Sun Microsystems who warped the entire meaning of the word "object" to market their product. [^9]</strike> But we won't get into that here either.
