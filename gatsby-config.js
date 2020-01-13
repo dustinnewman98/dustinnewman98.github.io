@@ -40,6 +40,9 @@ module.exports = {
         plugins: [
           {
             resolve: `gatsby-remark-prismjs`,
+            options: {
+              noInlineHighlight: true
+            }
           },
           {
             resolve: `gatsby-remark-footnotes`,
