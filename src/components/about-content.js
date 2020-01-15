@@ -10,31 +10,7 @@ export default () => (
           </span>
     </p>
     <p>
-      My name is Dustin and I'm a web{' '}
-      <span aria-label="spider" role="img">
-        🕷
-          </span>{' '}
-      developer who loves making tech that makes a{' '}
-      <span aria-label="sparkles" role="img">
-        ✨
-          </span>{' '}
-      positive{' '}
-      <span aria-label="sparkles" role="img">
-        ✨
-          </span>{' '}
-      influence on people's lives. I am really passionate about building scalable{' '}
-      <span aria-label="snake" role="img">
-        🐍
-          </span>{' '}
-      systems for web applications and learning new technologies.
-          I tend to obsess over squeezing every last ounce of efficiency{' '}
-      <span aria-label="lightning" role="img">
-        ⚡
-          </span>{' '}
-      out of anything I make.
-        </p>
-    <p>
-      I'm a Linguistics{' '}
+      My name is Dustin and I'm a Linguistics{' '}
       <span aria-label="tree" role="img">
         🌳
           </span>{' '}
@@ -46,7 +22,16 @@ export default () => (
       <span aria-label="bear" role="img">
         🐻
           </span>{' '}
-      graduating June 2020.
+      graduating June 2020. I am really passionate about building scalable{' '}
+      <span aria-label="snake" role="img">
+        🐍
+          </span>{' '}
+      systems for web applications and learning new technologies.
+          I tend to obsess over squeezing every last ounce of efficiency{' '}
+      <span aria-label="lightning" role="img">
+        ⚡
+          </span>{' '}
+      out of anything I make.
         </p>
     <p>
       You can find me on{' '}
