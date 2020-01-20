@@ -15,9 +15,9 @@ Threads are independent executions of code. In operating system terminology, "th
 Kernel threads are created through the underlying operating system. They receive their own stack (allocated within the existing memory of their parent process) and of course their own CPU registers for the stack and instruction pointers. However, just because threads do not require allocating their own address space, they still require allocating a stack. While the exact size differs between implementations, they are almost always going to be larger than green threads. For example, Rust allocates a default thread stack size of around 2 MB [^1]; Java, 1 MB [^2]; POSIX standard thread (i.e. `pthread_create` in C), 2 MB. [^3] Assuming we are using Rust or C, this means that to spawn one million threads, we would need 2 *terabytes* of RAM.
 
 #### Green Threads
-Green threads, also called "user-space threads," are created through the runtime rather than the underlying OS. Note that "runtime" can mean either the runtime of the language itself (which comprises all library code necessary to implement the language features used by your code) or a virtual machine runtime. Like kernel threads, green threads also receive their own stacks, but they are usually significantly smaller. This is because green threads are *multiplexed* onto kernel threads, meaning for every M green threads there are only N kernel threads where presumably M > N. Think of this like green threads "piggybacking" on top of kernel threads. 
+Green threads, also called "user-space threads," are created through the runtime rather than the underlying OS. Note that "runtime" can mean either the runtime of the language itself (which comprises all library code necessary to implement the language features used by your code) or a virtual machine runtime. Like kernel threads, green threads also receive their own stacks, but they are usually significantly smaller. This is because green threads are *multiplexed* onto kernel threads, meaning for every `M` green threads there are only `N` kernel threads where presumably `M > N`. Think of this like green threads "piggybacking" on top of kernel threads. 
 
-For example, assume we have 20 green threads that do not require large stacks. Perhaps they are mostly I/O bound operations, waiting on database requests or something. Instead of allocating 20 kernel threads, each having a far too generous 2 MB stack frame, we are looking at 40 MB of RAM, most of it wasted! Instead, if we give each thread, say a 4 KB stack frame, then we only need 0.8 MB of RAM and *only one* kernel thread. Here, we have M = 20 and N = 1. Popular implementations of green threads all have their own lingo, most of it totally irrelevant. For example, we have Go's "goroutines" with a default green thread stack size of 2 KB [^4]; Haskell's sanely named "threads" with 1 KB [^5]; and Erlang's insanely named "processes" with a shocking 233 *bytes*. [^6]
+For example, assume we have 20 green threads that do not require large stacks. Perhaps they are mostly I/O bound operations, waiting on database requests or something. Instead of allocating 20 kernel threads, each having a far too generous 2 MB stack frame, we are looking at 40 MB of RAM, most of it wasted! Instead, if we give each thread, say a 4 KB stack frame, then we only need 0.8 MB of RAM and *only one* kernel thread. Here, we have `M = 20` and `N = 1`. Popular implementations of green threads all have their own lingo, most of it totally irrelevant. For example, we have Go's "goroutines" with a default green thread stack size of 2 KB [^4]; Haskell's sanely named "threads" with 1 KB [^5]; and Erlang's insanely named "processes" with a shocking 233 *bytes*. [^6]
 
 Using these figures and the example in the previous section, even with the "large" size of Go, we can spawn one million threads with just 2 gigabytes of RAM. Extremely impressive!
 
@@ -63,9 +63,6 @@ func (s *Spinlock) lock() {
 }
 
 func (s *Spinlock) unlock() {
-    for s.locked == false {
-        // wait or spin
-    }
     s.locked = false
 }
 ```
@@ -119,7 +116,7 @@ Software transactional memory uses lockless mechanisms to control concurrent acc
 
 Here, our variable is the creatively named "X" and we have the original, unmodified version of it with a value of 13. Lucky us! When a thread wants to access any variable within an STM block (we'll get to this later), it really gets back a copy from the runtime. Now, the thread can do whatever it wants on the copy of the real object. After it's done, it needs to **commit** its modifications (think of this in the Git sense). If the version the copy has matches the version of the original, then the change is committed. If not, our original object has been modified and the thread will re-try its operations with a new copy (probably with version 2, for example).
 
-STM operates on the level of blocks within the code that are marked to run within a transaction. We call these blocks **atomic**, as they assume that their operations are uninterruptable, indivisible, and completely isolated from other threads. Although Clojure has native implementation of STM and I do love LISPs, I am going to follow convention and use a Go-esque syntax. (This is not valid Go!)
+STM operates on the level of blocks within the code that are marked to run within a transaction. We call these blocks **atomic**, as they assume that their operations are uninterruptible, indivisible, and completely isolated from other threads. Although Clojure has native implementation of STM and I do love LISPs, I am going to follow convention and use a Go-esque syntax. (This is not valid Go!)
 
 ```go
 has_name := make(map[string]bool)
@@ -157,7 +154,7 @@ Now to the <strike>better</strike> other side of concurrency control! Message pa
 - explicit communication
 - truly isolated processes
 
-Rather than "communicating by sharing memory", this "sharing memory by communicating." [^8] (We do not actually share memory.) In this version, our threads do not have access to the same memory space and only communicate by explicitly sending messages to each other. 
+Rather than "communicating by sharing memory", this is "sharing memory by communicating." [^8] (We do not actually share memory.) In this version, our threads do not have access to the same memory space and only communicate by explicitly sending messages to each other. 
 
 #### Actor Model
 Most famously implemented by Erlang (although this is somewhat contentious for reasons not in scope here), the actor model states that "everything is an actor." If this sounds similar to Java's "everything is an object," then you are very right! <strike>More so than Sun Microsystems who warped the entire meaning of the word "object" to market their product. [^9]</strike> But we won't get into that here either.

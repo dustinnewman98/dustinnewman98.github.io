@@ -3,10 +3,10 @@
     color: var(--text-color);
 
     .project-content {
-        font: 1.2em;
+        font-size: 1.2em;
         line-height: 1.7;
 
-        p {
+        p, ul, ol {
             margin-bottom: 0.7em;
         }
 
