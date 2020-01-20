@@ -1,5 +1,5 @@
 ---
-title: Twitter in Go: Postmortem
+title: "Twitter in Go: Postmortem"
 subtitle: And why simplicity can be nice
 description: An analysis of using Go in a Twitter clone web application.
 date: 2020-01-19
