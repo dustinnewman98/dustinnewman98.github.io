@@ -29,12 +29,6 @@ module.exports = {
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     {
-      resolve: 'gatsby-remark-images',
-      options: {
-        maxWidth: 1080,
-      },
-    },
-    {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
@@ -51,7 +45,13 @@ module.exports = {
               footnoteBackRefDisplay: "inline",
               footnoteBackRefInnerText: "[return]"
             }
-          }
+          },
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 1080,
+            },
+          },
         ]
       }
     },
