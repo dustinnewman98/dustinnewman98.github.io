@@ -28,7 +28,7 @@ Coming from the JavaScript community, the lack of a strong library community in 
 
 Documentation. [GoDoc](https://godoc.org) is basically Go's version of Python's [ReadTheDocs](https://readthedocs.io/) but because Go is statically-typed, it shows all the library-defined types, function parameters and return values, and even examples in an organized, clear way. This was invaluable. 
 
-Go's lack of "elegance" or "complexity" can be mind-clearing in some senses. You work with a basic set of building blocks: for loops, structs, `if err != nil`, type casting, etc. And the rest is up to you! There's no `map`, `reduce`, or `contagious async/await`. Once I got used to it, the approach was familiar and comfortable. 
+Go's lack of "elegance" or "complexity" can be mind-clearing in some senses. You work with a basic set of building blocks: for loops, structs, `if err != nil`, type casting, etc. And the rest is up to you! There's no `map`, `reduce`, or contagious `async/await`. Once I got used to it, the approach was familiar and comfortable. 
 
 ## Things I Disliked
 Go has a concept of "zero values," meaning the sensible "default" value for a particular type. For integers, it's zero; for strings, empty string. So when you instantiate a struct, any unspecified fields will be their respective zero value. I didn't like this because when I accidentally forgot a field, Go didn't warn me at all! The more types you define, the bigger a mess this becomes and it spreads around the codebase. I wish there was some way to define optional fields à la Rust or Swift. 
