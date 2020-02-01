@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "author": "Dustin Newman",
   "dependencies": {
-    "@dustinnewman98/syntax-tree-gen": "^0.1.7",
+    "@dustinnewman98/syntax-tree-gen": "^0.1.8",
     "gatsby": "^2.0.28",
     "gatsby-image": "^2.0.15",
     "gatsby-link": "^2.0.4",
