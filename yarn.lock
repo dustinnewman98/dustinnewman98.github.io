@@ -769,10 +769,10 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@dustinnewman98/syntax-tree-gen@^0.1.13":
-  version "0.1.13"
-  resolved "https://registry.yarnpkg.com/@dustinnewman98/syntax-tree-gen/-/syntax-tree-gen-0.1.13.tgz#7a39a1cfba8605f52750f97c63d6f4267b36dba5"
-  integrity sha512-CjHPtQY/Yw/rx7SyBIwk0uPE5HUdRY6j25FAXDmo8hHTBW0oiiUbje7xHUvQRvTWhuojg+38FNSETUa6l39Nkg==
+"@dustinnewman98/syntax-tree-gen@^0.1.14":
+  version "0.1.14"
+  resolved "https://registry.yarnpkg.com/@dustinnewman98/syntax-tree-gen/-/syntax-tree-gen-0.1.14.tgz#0d4563d70b460d58727c61a51e0013f3cdc0e688"
+  integrity sha512-Q0aSjYh5BFYZiXJ02mQWSLcCfzUg8RH3FajYXtyu+Ll3w6Dyl+hVxygW58v5jXUb33T7CuWkoLZDD0ftvP5bAg==
 
 "@gatsbyjs/relay-compiler@2.0.0-printer-fix.4":
   version "2.0.0-printer-fix.4"
