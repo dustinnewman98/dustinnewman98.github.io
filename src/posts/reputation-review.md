@@ -1,7 +1,7 @@
 ---
 title: '“Reputation”: An Exegesis'
 subtitle: 'Here lies Taylor Swift’s “reputation”'
-description: 
+description: Track by track thematic analysis of Taylor Swift’s album reputation
 date: 2020-01-20
 keywords: taylor swift, reputation, reputation review
 ---
@@ -62,13 +62,13 @@ Taylor draws from the story (and pun) of Elizabeth Taylor and Richard Burton in 
 The crime theme also continues through the second verse as Taylor says her lover “can be her jailer.” That is, he can imprison her. Compared to earlier, where we see Taylor is imprisoned or controlled by her reputation, this is shifting the control instead to someone who supposedly cares about her. We will talk more about this in “So It Goes...” and “Call It What You Want.”
 
 ## End Game
-A morning after the gritty bombast of the previous track, “End Game” starts with gentler, listerine green synths and the chorus. This track gives us insight into Taylor’s state of mind in ways the other, more aggressive earlier tracks of *reputation* don’t. The linearity of the album is not a strict chronological linearity, but rather an emotional, personal linearity, describing Taylor’s journey from one state of mind to another. Here, we see her desire for more from her current relationship. She wants to be her lover’s “end game,” that is his goal romantically. However, the term “end game” also refers to few final moves finishing a game of chess, suggesting that Taylor feels she is playing a calculated game here. She *wants* to be his end game but it’s clear that they both have reputations for breaking hearts and it’s very unclear what is actually going to happen. 
+A morning after the gritty bombast of the previous track, “End Game” starts with gentler, listerine green synths and the chorus. This track gives us insight into Taylor’s state of mind in ways the other, more aggressive earlier tracks of *reputation* don’t. The linearity of the album is not a strict chronological linearity, but rather an emotional, personal linearity, describing Taylor’s journey from one state of mind to another. Here, we see her desire for more from her current relationship. She wants to be her lover’s “end game,” that is his goal romantically. However, the term “end game” also refers to few final moves finishing a game of chess, suggesting that Taylor feels she is playing a calculated game here. She *wants* to be his end game but it’s clear that they both have reputations for breaking hearts and it’s very unclear what is actually going to happen. She “know[s] what they all say” about her, that she is a serial dater, that she goes through men, that she doesn’t commit, but she affirms here that she “ain’t tryna play” games with him. Here, we see Taylor grappling - albeit in a light-hearted way - with the implications of her reputation.
 
-Cross-referencing a bit, I believe the lover described is the same from *Lover*’s “I Forgot That You Existed.” In “End Game,” Taylor wants to be his “first string,” and it’s clear that she is ready to commit more deeply to him. Likewise, in IFTYE she says she would have been “first row, even if nobody came to [his] show.” Both of these lines express similar devotional attitudes towards him, but it’s unstated what his position in all of this is. 
+Once again, the two central themes of love and reputation feature here, but in a much lighter, optimistic way than they do in “Delicate.” Taylor knows that her reputation is problematic and is trying to ease that pain and judgment by escaping into a relationship. What is interesting is her saying that she doesn’t “want to hurt” him. This can be a simple way of saying she doesn’t want him to get affected by her fame and current reputation, but it also calls back to the characterization of them both as criminals, who each might hurt the other. In a way, this marks a sobering up from the impetuous bravado of “...Ready For It?,” acknowledging that, yes, maybe this is worth saving. 
 
-Once again, the two central themes of love and reputation feature here, but in a much lighter, optimistic way than they do in “Delicate.” Taylor knows that her reputation is problematic and is trying to ease that pain and judgment by escaping into a relationship. What is interesting is her saying that she doesn’t “want to hurt” him. This can be a simple way of saying she doesn’t want to break up, but it also calls back to the characterization of them both as criminals, who each might hurt the other. In a way, this marks a sobering up from the impetuous bravado of “...Ready For It?,” acknowledging that, yes, maybe this is worth saving. 
+The third verse is Taylor’s and is the most enlightening into the subjects of the song. She finds herself in an intoxicating relationship where, despite her best efforts “to forget it,” she couldn’t. She also gives a very tongue in cheek line about how she buries hatchets, but “keep[s] maps of where [she] put ‘em.” This line can be referencing the persona Taylor is playing into, where she does not truly forgive people who have wronged her, but keeps them in her mind when she needs to “play the victim,” but it can also be in a romantic context. That is, she fights with her lover and even though she says everything is okay, she’ll pull out these past grievances in future arguments.
 
-She’s also having a great time doing it! The music video features parties in Miami, Tokyo, and London where Taylor is seen laughing with friends. 
+The second half of the third verse is not only beautiful, but also thematically important. She says that she can’t “let [him] go,” which is echoed in the closing track “New Year’s Day.” Her lover has put his “hands prints on [her] soul,” which, aside from being just an amazingly poetic line, introduces a motif throughout *reputation* of him leaving a permanent mark on Taylor. See “Dress.” Taylor introduces another common motif here which is the color gold to represent true love. “It’s like [his] body is gold,” she says, showing that to her his entire being seems perfect. It is no coincidence that this follows a line mentioning alcohol. As we see later, alcohol is pervasive through the album, especially when the two are together. Careful not to dismiss this as mere frivolity though. Taylor was nearly 28 years old when *reputation* came out and not once was she photographed with a drink in her hand. Her public persona was so heavily controlled, managed, and filtered to be wholesome and family-friendly that she missed out on a lot of typical experiences for 20 somethings. So, when Taylor sings about alcohol, it is not for reckless shock value, but to show her progression into allowing herself the mundane indulgences that have been withheld from her for her entire formative years (12-27 years old). It may be hard to view the mention of alcohol as something with such a deeper meaning than drunkenness, but here it is undeniable.
 
 ## I Did Something Bad
 
@@ -270,6 +270,10 @@ The overall narrative importance of “So It Goes...” is that it closes the fi
 ## Gorgeous
 “Gorgeous” starts the beginning of the later interpretation of Taylor’s story. It’s analogous to “...Ready For It?” but from a much more grounded persona. If you look at the singles released for *reputation*, you’ll notice that Taylor released the beginnings and ends of both sides of the album (i.e. “...Ready For It?” and “Gorgeous” are the beginnings and LWYMMD and “Call It What You Want” are the second-to-last from the ends).
 
+The first verse narrates the meeting between Taylor and her future boyfriend, with her “making fun of the way [he] talks,” a reference to his Britishness. However, she felt trapped by her current boyfriend who was doing questionable things in clubs according to Taylor. This flirting despite having a boyfriend is shocking coming from Taylor. The whole verse, in fact song, is tongue-in-cheek, capturing the playful, flirty side Taylor felt during their meeting. “I’ll just stumble on home... alone... unless you wanna come along?” she asks him during the bridge. This reflects the same conversational tone from “Delicate,” giving us glimpses into the couple’s beginnings.
+
+What is most important about “Gorgeous,” at least narratively, is that it sets us up for the next song... 
+
 ## Getaway Car
 For this song, it’s gonna be helpful to do a line-by-line analysis because each line is quite complex and it’s not easy to collapse them while still remaining cohesive. 
 
@@ -469,6 +473,11 @@ Her rebound of course was narrated in “Getaway Car,” along with the white an
 Taylor’s part about how she “woke up just in time” reminds me LWYMMD’s “got harder in the nick of time.” And her closing line of the bridge, “And my hands shake / I can’t explain this,” reminds me of DWOHT’s “we love without reason,” where there is no narrative. They’re in love and that’s the story. 
 
 ## This Is Why We Can’t Have Nice Things
+This is the song which indulges the most in Taylor’s real life, specific feuds. As such, it does not speak as much to the overall themes of *reputation*, but it does showcase her development in learning that you can’t let everyone into your personal life. 
+
+The first verse references the *1989* era of Taylor’s career, where she was at meteoric success. She reminisces that “it was so nice throwing big parties,” with the “bass beat rattling the chandelier” and “everyone swimming in a champagne sea.” Taylor was at her highest point of fame and recognition, “feeling so Gatsby for that whole year,” where she had countless admirers and friends and fans even among the famous. However, those who have read *The Great Gatsby* will know that **SPOILER** ⚠️⚠️⚠️ Gatsby is shot unceremoniously outside his mansion and has a lonely funeral. For all his riches and success and parties, Gatsby was unable to move on from the past and instead spent his life surrounded by people who didn’t know him, trying to impress someone who didn’t love him. The parallels here are telling. Rather than pursue this empty, luxurious life, Taylor moves on to be with people who do love her, who do know her. 
+
+The rest of the song is fairly straightforward in its interpretation. The second verse references the specifics from her feud with Kanye, saying that “Friends don’t try to trick you / Get you on the phone / And mind-twist you.” I won’t spend longer here.
 
 ## Call It What You Want
 My favorite track! This song is a love letter to Taylor’s boyfriend and best highlights the overall journey of *reputation*; she went from someone chained up to her reputation and surrounded by fake friends to someone who recognizes that the people who love you will know your character not your reputation. The track is crafted out of Taylor’s own voice rather than pure synths, which is a very sweet addition.
@@ -497,11 +506,62 @@ The next stanza heavily feature the castle imagery used throughout the album.
 >
 > All the jokers dressing up as kings
 
-Following our established metaphor, the previous joker/fool/jester was promoted to a king by the media just as she was dethroned. It’s an inevitable cycle that the media perpetuates to create a constantly evolving narrative, which of course drives buzz, traffic, clicks, and overall consumption of said media. 
+Following our established metaphor, the previous joker/fool/jester was promoted to a king by the media just as she was dethroned. It’s an inevitable cycle that the media perpetuates to create a constantly evolving narrative, which of course drives buzz, traffic, clicks, and overall consumption of said media. However, all of this “fade[s] to nothing when [she] looks at him,” meaning that he makes her realize where her true priorities lie. The concept of the couple being surrounded by near insurmountable difficulties, but together they overcome or reject them altogether permeates the album. It is also featured in “Delicate” (“My reputation’s never been worse so / You must like me for me), “So It Goes…” (“All eyes on us / You make everyone disappear”), and “Dress” (“Our secret moments / In a crowded room”). Also, note that in both stanzas of the verse, it follows a pattern of two lines remembering the drama and one line describing how he helped her through those times. 
 
-Also, note that in both stanzas of the verse, it follows a pattern of two lines remembering the drama and one line describing how he helped her through those times. 
+> And I know I make the same mistakes
+>
+> Every time, Bridges burn, I never learn
+>
+> At least I did one thing right
+
+These lines remind me of the similar line in Taylor’s poem “Why She Disappeared”: “‘Whatever you say, it is not right.’ / ‘Whatever you do, it is not enough.’” However, despite her toxic reputation, she realizes that she *has* done something right: found what matters to her. Through love, she was able to unchain herself from her reputation and no matter what the public opinion of her is, because as we have seen, it is relentlessly critical, she knows that she at the very least has found what is important to her in life. These lines sum up, in almost its entirety, the whole of *reputation*: a journey from imprisonment to reputation to the realization of one’s character.
+
+> Starry eyes sparking up my darkest night
+
+This line largely reiterates the same sentiments as above, i.e. “Even in my worst times / You could see the best in me,” but when I heard it it immediately reminded me of a line that I adore which is: “The darker the night, the brighter the stars.” The line comes from Dostoyevsky in his famous work titled… yes, “Crime and Punishment.” The same exact themes which appear so pervasively through *reputation* and which Taylor cited herself as an influence on her creative process throughout the album’s production. What is even more fascinating is that Dostoyevsky faced a very public downfall after his grandiose ego caused the public to detest him after his publication of “Crime and Punishment.” The time period in between the two? 15 days. The face-heel turn was so sharp and brutal within such a short time that one must see the parallels here. If you would like to read more about Dostoyevsky’s experience, The Guardian published [a nice outline](https://www.theguardian.com/books/booksblog/2010/sep/24/author-reputation-dostoevsky).
+
+> I want to wear his initial
+>
+> On a chain round my neck
+>
+> Not because he owns me
+>
+> But ‘cause he really knows me
+>
+> (which is more than they can say)
+
+If you remember from the discussion on the album cover, Taylor’s chain around her neck represented her imprisonment to her reputation (and possibly to her former record label BMG), unable to speak out for the fear it would be used against her. She felt powerless against the overwhelming public perception of her. It makes it all the more empowering, then, that Taylor has thrown off her shackles to don her lover’s initial (yes, singular here. She is referring to a small charm which just reads “J.”) not as a symbol of subjugation or ownership, but of belonging. She has found someone who truly knows her and she wears their love around her neck symbolically through her necklace. Crucially, she “want[s] to.” It was neither forced upon her nor managed for her public persona, but came forth genuinely from the love that she had found. This love was markedly different from that which she had previously experienced however, as she notes by saying: “he really knows me / (which is more than they can say).” Once again, this line references the distinction between one’s reputation and one’s character. Taylor is surrounded by people who know her character and who truly know her and, assumedly, have her best interests in mind. Far from a symbol of imprisonment, Taylor’s “chain” here (the chain of her necklace) is a symbol of her freedom from her past and reputation.
+
+> “You don’t need to save me,
+>
+> but would you run away with me?”
+
+Taylor was not escaping through love akin to mindless bliss, but rather freed *herself* from the traps of her own reputation. She makes it clear here that she was not the damsel in distress saved by the prince, but rather he stood by her side and “ran away with [her]” from, presumably, the kingdom mentioned earlier in *reputation* representing fame and the entertainment industry. She can save herself, but has also found a love that gives her a “partner in crime.”
 
 ## New Year’s Day
+At last, we arrive. The album closer and a hopeful look at the future the two have built together. Musically, the track is a gentle, percussion-less piano ballad. The stark contrast between it and “…RFI?” are not coincidental. Whereas the opening track reflects the aggressive, weaponized mindset Taylor started off in, chained against her reputation but tearing at the chains, the closer carries us into her current mindset, one of hope, love, and tenderness. There is no mention of her reputation, her feuds, or her public persona, but rather the singular image of the couple leading a life together.
+
+Narratively, the song describes the morning after a New Year’s Eve party, where Taylor and her lover “are cleaning up bottles.” Thematically, however, it’s much more than that. Taylor uses the metaphor of New Year’s Eve (NYE) as the highlights of one’s life, whereas New Year’s Day (NYD) represents the quiet lulls. She describes the typical mess of the night before (“Glitter on the floor,” “Girls carrying their shoes / Down in the lobby,” and “Candle wax and polaroids / On the hardwood floor”) but shows that her lover is there with her after every one else has gone home. This shows Taylor’s growth, as before she had people who were only there to celebrate NYE with her, but no one to clean up the morning after with. It’s a powerful symbol, which she has also elaborated on in her documentary *Miss Americana*: getting to the height of your career, standing at the top, and wondering “is this it?” 
+
+Taylor professes her commitment in the lines “Don’t read the last page / But I stay,” meaning that throughout everything, throughout the chapters of pain, the climaxes, and even the uneventful in-between, she remains committed to him. This so perfectly encapsulates what love is, in the sense of long-term love. She elaborates that even when her love is lost and she’s scared, when he’s “turning away,” they stay together. Far from the days of *Fearless*’s “Love Story,” this explores what happens after Romeo and Juliet run off together. Not every day, or even year, can be thrilling and impactful, but no matter what comes, including the normal doubts and fears and fights of every relationship, they experience it together. She wants his “midnights,” which can mean both his exciting parties, but also the dark periods of his life, just as he was there for hers.
+
+The second verse largely reiterates this sentiment. “You squeeze my hand three times / In the back of the taxi” refers to a common way to say “I love you” silently (once for each word), which shows their silent, yet strong devotion to each other. They aren’t screaming “I love you” from the roof tops, but this silent gesture shows every bit as much love. Taylor says that she’ll “be there if [he’s] the toast of the town,” meaning she’ll be with him even when his success means parties and attention and busy schedules. This is something Taylor, of course, is well aware of, having had to date throughout her fame for much of her life. So, when she says that she’ll be there when he’s “the toast of the town,” she knows exactly everything that that entails. But, she’ll also be there if he “strike[s] out.” Unlike her friends from before who were *only* there when she was the “toast of the town,” Taylor shows that she is really with him for him (à la “Delicate”) and won’t waver or leave when his success dwindles. 
+
+Beautifully, the last line of *reputation* is “you and me, forevermore.” It represents the difficult, confusing, and long journey Taylor has taken throughout the album, not just within the public persona, but within herself. She has evaluated her own priorities, her own life, and has decided on something new, but healthy and strong. She has gone from hurt, fear, and anger of the first half of *reputation* to the love and commitment of the latter half. Echoing “Call It What You Want,” she did one thing right and this closing line wraps it up.
+
+## My Favorite Seconds of the Album
+Throughout this “close listening” of *reputation*, I discovered some especially beautiful, but small moments, which make me appreciate even more the effort that went into it. I will present them below in an unordered list.
+
+- 2:36 - “End Game”
+- 3:11 - “I Did Something Bad”
+- 3:08 - “Don’t Blame Me” Backing Track (available through the *Taylor Swift Karaoke: reputation* compilation. If this is not available, 3:11 from the main track approximates it.)
+- 2:46 - “Delicate”
+- 1:18 - “Look What You Made Me Do”
+- 2:06 - “Gorgeous” This one is incredibly difficult to hear if you don’t know what you’re listening for, even on the karaoke edition, but it’s a very distant melody sung by Taylor.
+- 2:45 - “Dress”
+
+## Conclusion
+If you made it this far I commend not just your stamina, but your dedication! It was a long, fascinating journey into one of pop’s most interesting albums in decades. Deconstructing a deconstruction of Taylor Swift, her flaws, her merits, her lyrics, is no easy task and I have no doubt that there are mistakes, typos, and oversights in my attempt, but hopefully this serves as a solid reference and point of discussion for further analyses. For elaboration, I would love to see a cross-referenced analysis between *reputation* and her earlier and later works, as I’m sure there are many points of insight to be gleaned. However, despite my love for all of her albums in their own unique ways, *reputation*, as this post highlights, remains her most layered, complex, and just plain interesting album for me personally. It seems like every month I learn or discover something new about it and that is one of the greatest joys of music and, specifically, Taylor’s music. Happy listening!
 
 [^1]: https://gawker.com/rich-as-fuck-taylor-swift-pulls-all-her-music-off-spoti-1654005451
 
