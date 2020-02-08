@@ -2,7 +2,7 @@ import React from "react"
 import { Helmet } from "react-helmet"
 import { StaticQuery, graphql } from "gatsby"
 
-export default ({ title, description, pathname, article }) => (
+export default ({ title, description, subtitle, pathname, article }) => (
     <StaticQuery
         query={query}
         render={({
@@ -39,9 +39,12 @@ export default ({ title, description, pathname, article }) => (
                             <meta name="twitter:creator" content={twitterUsername} />
                         )}
                         {seo.title && <meta name="twitter:title" content={seo.title} />}
-                        {seo.description && (
-                            <meta name="twitter:description" content={seo.description} />
-                        )}
+                        {article
+                            ? subtitle
+                                ? <meta name="twitter:description" content={subtitle} />
+                                : <meta name="twitter:description" content={seo.description} />
+                            : <meta name="twitter:description" content={seo.description} />
+                        }
                     </Helmet>
                 </>
             )
