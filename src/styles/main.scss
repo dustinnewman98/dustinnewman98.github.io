@@ -28,7 +28,8 @@ body {
         margin: 0;
     }
 
-    a {
+    /* Don't style the links to post headers */
+    a:not(.before) {
         border-bottom: 1px solid var(--accent-color);
         box-shadow: inset 0 -2px 0px 0px var(--accent-color);
         font-weight: bold;
