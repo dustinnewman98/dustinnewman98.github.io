@@ -3,6 +3,13 @@
     word-wrap: break-word;
     color: var(--text-color);
 
+    a.before {
+        border: 0px;
+        box-shadow: none;
+        text-decoration: none;
+        font-weight: normal;
+    }
+
     .post-title {
         font: bold 42px PlayfairDisplay;
         margin-top: 1em;
