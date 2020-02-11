@@ -6,7 +6,7 @@ img: './twitter-clone.png'
 role: 'Creator'
 stack: Go
 github: 'dustinnewman98/twitter_clone'
-live: 'https://twitter.dustinnewman.io'
+live: 'http://twitter.dustinnewman.io'
 ---
 
 I've been interested in the Go programming language for a bit, largely due to the huge ecosystem exploding around it lately. Especially in web services (Mattermost, Keybase, Uber, etc.) and deployment tools (Docker, Kubernetes), there have been so many amazing new tools built in the language that I've been meaning to see what the excitement was all about. And, as a web-loving programmer, I had particular interest vested in the merits of Go.
