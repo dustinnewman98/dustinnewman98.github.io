@@ -1,5 +1,5 @@
-import React from 'react';
-import MenuLink from './menu-link';
+import React from "react"
+import MenuLink from "./menu-link"
 
 export default () => (
   <div id="header">
@@ -9,4 +9,4 @@ export default () => (
       <MenuLink to="projects" text="projects" />
     </div>
   </div>
-);
+)

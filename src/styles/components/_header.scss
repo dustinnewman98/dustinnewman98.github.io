@@ -10,12 +10,6 @@
         overflow: auto;
         white-space: nowrap;
 
-        @media #{$desktop-query} {
-            top: 0;
-            position: fixed;
-            z-index: 1;
-        }
-
         a, p {
             display: inline-block;
             border: none;

@@ -31,6 +31,8 @@
 
     .one-post-blurb {
         margin-top: 0.7em;
+        display: "flex"; 
+        flex-direction: "column";
     }
 
     .one-post-blurb-title {

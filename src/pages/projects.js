@@ -1,21 +1,21 @@
-import React from 'react';
-import { graphql } from 'gatsby';
-import PageHeader from '../components/page-header';
-import PageContent from '../components/page-content';
-import Layout from '../layouts';
-import Link from 'gatsby-link';
-import Img from 'gatsby-image';
-import SEO from '../components/seo';
+import React from "react"
+import { graphql } from "gatsby"
+import PageHeader from "../components/page-header"
+import PageContent from "../components/page-content"
+import Layout from "../layouts"
+import Link from "gatsby-link"
+import Img from "gatsby-image"
+import SEO from "../components/seo"
 
 function renderGithub(github) {
   return github ? (
     <p>
       <span aria-label="octopus" role="img">
         🐙
-      </span>{' '}
+      </span>{" "}
       GitHub: <a href={`https://www.github.com/${github}`}>{github}</a>
     </p>
-  ) : null;
+  ) : null
 }
 
 function renderLive(live) {
@@ -23,10 +23,10 @@ function renderLive(live) {
     <p>
       <span aria-label="sparkles" role="img">
         ✨
-      </span>{' '}
+      </span>{" "}
       Live at: <a href={live}>{live}</a>
     </p>
-  ) : null;
+  ) : null
 }
 
 function renderTextBox(project) {
@@ -40,13 +40,13 @@ function renderTextBox(project) {
         <p>
           <span aria-label="bread" role="img">
             🍞
-          </span>{' '}
+          </span>{" "}
           Role: {project.frontmatter.role}
         </p>
         <p>
           <span aria-label="wizard" role="img">
             🧙
-          </span>{' '}
+          </span>{" "}
           Worked with: {project.frontmatter.stack}
         </p>
         {renderGithub(project.frontmatter.github)}
@@ -67,15 +67,18 @@ function renderProject(project) {
         />
       </div>
     </div>
-  );
+  )
 }
 
 export default function Projects({ data }) {
-  const { edges: projects } = data.allMarkdownRemark;
+  const { edges: projects } = data.allMarkdownRemark
 
   return (
     <Layout>
-      <SEO title="My Projects" description="List of projects by Dustin Newman." />
+      <SEO
+        title="My Projects"
+        description="List of projects by Dustin Newman."
+      />
       <PageContent>
         <PageHeader text="My Projects" emoji="🤖" />
         {projects
@@ -83,7 +86,7 @@ export default function Projects({ data }) {
           .map(({ node: project }) => renderProject(project))}
       </PageContent>
     </Layout>
-  );
+  )
 }
 
 export const projQuery = graphql`
@@ -119,4 +122,4 @@ export const projQuery = graphql`
       }
     }
   }
-`;
+`

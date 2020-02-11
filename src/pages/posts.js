@@ -1,37 +1,37 @@
-import React from 'react';
-import { graphql } from 'gatsby';
-import Link from 'gatsby-link';
-import PageHeader from '../components/page-header';
-import PageContent from '../components/page-content';
-import Layout from '../layouts';
-import SEO from '../components/seo';
+import React from "react"
+import { graphql } from "gatsby"
+import Link from "gatsby-link"
+import PageHeader from "../components/page-header"
+import PageContent from "../components/page-content"
+import Layout from "../layouts"
+import SEO from "../components/seo"
 
 function getMonth(input) {
-  let d = new Date(input);
+  let d = new Date(input)
   let months = [
-    'January',
-    'February',
-    'March',
-    'April',
-    'May',
-    'June',
-    'July',
-    'August',
-    'September',
-    'October',
-    'November',
-    'December',
-  ];
-  return months[d.getMonth()];
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ]
+  return months[d.getMonth()]
 }
 
 function getDay(input) {
-  let d = new Date(input);
-  return d.getDate();
+  let d = new Date(input)
+  return d.getDate()
 }
 
 export default function Posts({ data }) {
-  const { edges: posts } = data.allMarkdownRemark;
+  const { edges: posts } = data.allMarkdownRemark
 
   return (
     <Layout>
@@ -43,16 +43,20 @@ export default function Posts({ data }) {
           .map(({ node: post }) => {
             return (
               <Link
-                to={post.frontmatter.path ? post.frontmatter.path : `/posts${post.fields.slug}`}
+                to={
+                  post.frontmatter.path
+                    ? post.frontmatter.path
+                    : `/posts${post.fields.slug}`
+                }
                 className="one-post"
-                style={{ display: 'flex' }}
+                style={{ display: "flex" }}
               >
                 <div
                   className="one-post-date"
                   style={{
-                    display: 'flex',
-                    flexDirection: 'column',
-                    alignItems: 'center',
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
                   }}
                 >
                   <h1 className="one-post-date-day">
@@ -64,7 +68,6 @@ export default function Posts({ data }) {
                 </div>
                 <div
                   className="one-post-blurb"
-                  style={{ display: 'flex', flexDirection: 'column' }}
                 >
                   <h1 className="one-post-blurb-title">
                     {post.frontmatter.title}
@@ -74,11 +77,11 @@ export default function Posts({ data }) {
                   </h2>
                 </div>
               </Link>
-            );
+            )
           })}
       </PageContent>
     </Layout>
-  );
+  )
 }
 
 export const postQuery = graphql`
@@ -104,4 +107,4 @@ export const postQuery = graphql`
       }
     }
   }
-`;
+`

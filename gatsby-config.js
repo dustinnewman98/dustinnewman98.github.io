@@ -3,7 +3,7 @@ module.exports = {
     title: 'Dustin Newman',
     titleTemplate: '%s | Dustin Newman',
     author: 'Dustin Newman',
-    description: 'Software engineer, UCLA Computer Science and Linguistics major, nerd.',
+    description: 'Personal website by Dustin Newman.',
     url: 'https://dustinnewman.io',
     twitterUsername: '@dustinnewman98'
   },
@@ -105,6 +105,19 @@ module.exports = {
           }
         ]
       }
-    }
+    },
+    {
+      resolve: "gatsby-plugin-manifest",
+      options: {
+        name: "Dustin Newman",
+        short_name: "Dustin Newman",
+        start_url: "/",
+        background_color: "#FCFCFF",
+        theme_color: "#1B9CFC",
+        display: "minimal-ui",
+        icon: "src/assets/icon.png",
+        theme_color_in_head: false,
+      },
+    },
   ],
 };

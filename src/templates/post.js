@@ -1,12 +1,12 @@
-import React from 'react';
-import { graphql } from 'gatsby';
-import Layout from '../layouts';
-import PageContent from '../components/page-content';
-import SEO from '../components/seo';
+import React from "react"
+import { graphql } from "gatsby"
+import Layout from "../layouts"
+import PageContent from "../components/page-content"
+import SEO from "../components/seo"
 
 export default function PostTemplate({ data }) {
-  const post = data.markdownRemark;
-  const frontmatter = post.frontmatter;
+  const post = data.markdownRemark
+  const frontmatter = post.frontmatter
 
   return (
     <Layout>
@@ -25,7 +25,7 @@ export default function PostTemplate({ data }) {
         </article>
       </PageContent>
     </Layout>
-  );
+  )
 }
 
 export const pageQuery = graphql`
@@ -43,4 +43,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`

@@ -1,12 +1,12 @@
-import React from 'react';
-import { graphql } from 'gatsby';
-import Layout from '../layouts';
-import SEO from '../components/seo';
-import PageContent from '../components/page-content';
+import React from "react"
+import { graphql } from "gatsby"
+import Layout from "../layouts"
+import SEO from "../components/seo"
+import PageContent from "../components/page-content"
 
 export default function ProjectTemplate({ data }) {
-  const project = data.markdownRemark;
-  const frontmatter = project.frontmatter;
+  const project = data.markdownRemark
+  const frontmatter = project.frontmatter
 
   return (
     <Layout>
@@ -23,7 +23,7 @@ export default function ProjectTemplate({ data }) {
         </PageContent>
       </div>
     </Layout>
-  );
+  )
 }
 
 export const pageQuery = graphql`
@@ -40,4 +40,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`
