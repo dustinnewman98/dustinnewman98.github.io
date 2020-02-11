@@ -1,6 +1,7 @@
 ---
 title: Buzz
 subtitle: 'Daily production base for Daily Bruin'
+date: 2019-05-23
 img: ./buzz.png
 role: 'Creator'
 stack: MongoDB, Express, React, Node

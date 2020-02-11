@@ -1,7 +1,8 @@
 ---
 title: tipa NPM package
 subtitle: 'TypeScript package for phonological programming'
-img: './syntax-tree-generator.png'
+date: 2020-02-01
+img: './tipa.png'
 role: 'Creator'
 stack: TypeScript
 github: 'dustinnewman98/tipa'

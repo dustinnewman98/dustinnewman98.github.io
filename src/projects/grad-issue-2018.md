@@ -1,6 +1,7 @@
 ---
 title: 'Grad Issue 2018'
 subtitle: "The Daily Bruin's 2018 Graduation Issue"
+date: 2018-06-11
 img: './grad-issue-2018.png'
 role: 'Assistant Online Editor'
 stack: React, TypeScript, Sass

@@ -1,6 +1,7 @@
 ---
 title: meow
 subtitle: Social media scheduler for the Daily Bruin
+date: 2017-10-17
 img: ./meow.png
 role: Project Lead
 stack: Django, React, Postgres

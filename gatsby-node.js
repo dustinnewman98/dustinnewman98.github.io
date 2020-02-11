@@ -3,14 +3,20 @@ const { createFilePath } = require('gatsby-source-filesystem');
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
   if (node.internal.type === 'MarkdownRemark') {
-    const { createNodeField } = actions;
+    const { createNodeField } = actions
 
-    node.collection = getNode(node.parent).sourceInstanceName;
-    const slug = createFilePath({
-      node,
-      getNode,
-      basePath: 'src/',
-    });
+    node.collection = getNode(node.parent).sourceInstanceName
+
+    let slug
+    if (node.frontmatter && node.frontmatter.path !== undefined) {
+      slug = node.frontmatter.path
+    } else {
+      slug = createFilePath({
+        node,
+        getNode,
+        basePath: 'src/',
+      });
+    }
 
     createNodeField({
       node,
@@ -40,6 +46,7 @@ exports.createPages = async ({ actions, graphql }) => {
                 subtitle
                 description
                 date
+                path
               }
             }
           }
@@ -58,6 +65,9 @@ exports.createPages = async ({ actions, graphql }) => {
         },
       });
     } else if (node.collection == 'posts') {
+      if (node.frontmatter && node.frontmatter.path) {
+        return
+      }
       createPage({
         path: `/posts${node.fields.slug}`,
         component: path.resolve(`./src/templates/post.js`),

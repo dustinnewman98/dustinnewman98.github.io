@@ -43,7 +43,7 @@ export default function Posts({ data }) {
           .map(({ node: post }) => {
             return (
               <Link
-                to={`/posts${post.fields.slug}`}
+                to={post.frontmatter.path ? post.frontmatter.path : `/posts${post.fields.slug}`}
                 className="one-post"
                 style={{ display: 'flex' }}
               >
@@ -98,6 +98,7 @@ export const postQuery = graphql`
             title
             subtitle
             date(formatString: "MMMM DD, YYYY")
+            path
           }
         }
       }

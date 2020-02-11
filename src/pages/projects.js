@@ -90,6 +90,7 @@ export const projQuery = graphql`
   query projQuery {
     allMarkdownRemark(
       filter: { fileAbsolutePath: { regex: "/(/src/projects)/.*.md$/" } }
+      sort: { fields: [frontmatter___date], order: DESC }
     ) {
       edges {
         node {

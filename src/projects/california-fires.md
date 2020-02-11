@@ -1,6 +1,7 @@
 ---
 title: 'Up From the Ashes'
 subtitle: "Daily Bruin Interactive on the 2019 Camp Fire"
+date: 2019-05-14
 img: './california-fires.png'
 role: 'Top Online Editor'
 stack: React, TypeScript, Gatsby.js

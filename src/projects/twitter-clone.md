@@ -1,12 +1,13 @@
 ---
-title: "Twitter in Go: Postmortem"
-subtitle: And why simplicity can be nice
-description: An analysis of using Go in a Twitter clone web application.
+title: Twitter Clone in Go
+subtitle: My first use of Go
 date: 2020-01-19
-keywords: go, twitter, golang twitter
+img: './twitter-clone.png'
+role: 'Creator'
+stack: Go
+github: 'dustinnewman98/twitter_clone'
+live: 'https://twitter.dustinnewman.io'
 ---
-
-*Note: View the project at [twitter.dustinnewman.io](http://twitter.dustinnewman.io) and the source code [here](https://github.com/dustinnewman98/twitter_clone).*
 
 I've been interested in the Go programming language for a bit, largely due to the huge ecosystem exploding around it lately. Especially in web services (Mattermost, Keybase, Uber, etc.) and deployment tools (Docker, Kubernetes), there have been so many amazing new tools built in the language that I've been meaning to see what the excitement was all about. And, as a web-loving programmer, I had particular interest vested in the merits of Go.
 

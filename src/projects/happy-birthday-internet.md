@@ -1,6 +1,7 @@
 ---
 title: Happy Birthday Internet
 subtitle: Daily Bruin flatpage on the 50th anniversary of the invention of the Internet
+date: 2019-10-29
 img: ./happy-birthday-internet.png
 role: Top Online Editor
 stack: TypeScript, React, Gatsby.js

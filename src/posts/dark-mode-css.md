@@ -2,7 +2,7 @@
 title: "How to use CSS with native dark mode"
 subtitle: "Let there be... dark"
 description: "Tutorial on how to use CSS to support iOS dark mode."
-date: "2019-12-16"
+date: 2019-12-16
 ---
 
 With iOS 13, I have been enjoying not just the beautiful new dark mode, but the automatic transition after sunset. It's easier on my eyes and keeps me conscious of using technology too much before bed. That said, the native dark mode is only for native apps. Or is it?

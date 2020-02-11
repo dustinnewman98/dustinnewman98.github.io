@@ -1,6 +1,7 @@
 ---
 title: 'Registration Issue 2019'
 subtitle: "The Daily Bruin's 2019 Registration Issue"
+date: 2019-09-23
 img: './reg-issue-2019.png'
 role: 'Top Online Editor'
 stack: JavaScript, React, Express, MongoDB

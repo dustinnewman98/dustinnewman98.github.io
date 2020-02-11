@@ -1,6 +1,7 @@
 ---
 title: 'Subtle Asian Traits'
 subtitle: "Daily Bruin flatpage on the 'Subtle Asian Traits' Facebook group"
+date: 2019-10-01
 img: './subtle-asian-traits.png'
 role: 'Top Online Editor'
 stack: React, TypeScript, Gatsby.js

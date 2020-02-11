@@ -2,7 +2,7 @@
 title: The Secular Shunning of the Uyghur
 description: "Analysis of the Xinjiang question through modern Chinese secularism."
 keywords: "uyghur, xinjiang, islam, secularism, saba mahmood"
-date: "2019-06-12"
+date: 2019-06-12
 ---
 
 > This term paper was written for "Religion M115A: Islam and Other Religions" taught by Professor Luke Yarbrough and is published through [UCLA Policy 965](http://www.adminpolicies.ucla.edu/pdf/965.pdf), *Ownership of Creative Work Submitted by Students* for educational and professional uses only. I take no responsibility for plagiarism and retain full copyright ownership.

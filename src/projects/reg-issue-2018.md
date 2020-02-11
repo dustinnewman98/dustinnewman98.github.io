@@ -1,6 +1,7 @@
 ---
 title: Registration Issue 2018
 subtitle: The Daily Bruin's 2018 Registration Issue
+date: 2018-09-22
 img: ./reg-issue-2018.png
 role: Assistant Online Editor
 stack: TypeScript, React, Gatsby.js

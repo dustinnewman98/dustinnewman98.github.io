@@ -1,6 +1,7 @@
 ---
 title: 'radius'
 subtitle: 'Privacy-first, location-based social media iOS app'
+date: 2017-11-05
 img: './radius.png'
 role: 'Co-Founder'
 stack: Swift, Firebase, Node.js, AWS

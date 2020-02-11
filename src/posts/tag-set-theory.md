@@ -3,7 +3,7 @@ title: "Tags as Set Theory"
 subtitle: "Let's play #"
 description: "Applying set theory to web tagging systems."
 keywords: "tags, set theory, tagging"
-date: "2019-12-29"
+date: 2019-12-29
 ---
 
 As a former Tumblr-er, there was nothing more frustrating about that site than the tagging system. Aside from the near-universal problem of "this tag" vs. "thistag" vs. "This tag" vs. ad infinitum, I have yet to see a tagging system that allows set theory operations. What if I want to see posts analyzing the parallels between Taylor Swift’s "reputation" and "Lover"? Sure, I can search "reputation," but then I have to sift through mostly irrelevant details to find the hidden gems. What I really want is a way to say "reputation ∩ Lover."

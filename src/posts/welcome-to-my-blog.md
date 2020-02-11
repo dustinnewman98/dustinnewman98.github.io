@@ -2,7 +2,7 @@
 title: "Welcome to my blog!"
 subtitle: "Please excuse the dust..."
 description: "Intro post to my new blog."
-date: "2018-06-24"
+date: 2018-06-24
 ---
 
 Hello there! This is my very first post on my new website! 🎉 (Let's hope emojis work properly.)

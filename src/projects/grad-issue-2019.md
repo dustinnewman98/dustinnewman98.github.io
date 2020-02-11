@@ -1,6 +1,7 @@
 ---
 title: 'Grad Issue 2019'
 subtitle: "The Daily Bruin's 2019 Graduation Issue"
+date: 2019-06-10
 img: './grad-issue-2019.png'
 role: 'Top Online Editor'
 stack: JavaScript, React, Express, MongoDB

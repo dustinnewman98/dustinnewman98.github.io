@@ -1,7 +1,8 @@
 ---
 title: Optimality NPM package
 subtitle: 'Automatically evaluate language grammars from OT'
-img: './syntax-tree-generator.png'
+date: 2020-02-05
+img: './tipa.png'
 role: 'Creator'
 stack: TypeScript
 github: 'dustinnewman98/optimality'
