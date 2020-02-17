@@ -51,31 +51,31 @@ export default function Posts({ data }) {
                 className="one-post"
                 style={{ display: "flex" }}
               >
-                <div
-                  className="one-post-date"
-                  style={{
-                    display: "flex",
-                    flexDirection: "column",
-                    alignItems: "center",
-                  }}
-                >
-                  <h1 className="one-post-date-day">
-                    {getDay(post.frontmatter.date)}
-                  </h1>
-                  <p className="one-post-date-month">
-                    {getMonth(post.frontmatter.date)}
-                  </p>
-                </div>
-                <div
-                  className="one-post-blurb"
-                >
-                  <h1 className="one-post-blurb-title">
-                    {post.frontmatter.title}
-                  </h1>
-                  <h2 className="one-post-blurb-subtitle">
-                    {post.frontmatter.subtitle}
-                  </h2>
-                </div>
+                <article>
+                  <div
+                    className="one-post-date"
+                    style={{
+                      display: "flex",
+                      flexDirection: "column",
+                      alignItems: "center",
+                    }}
+                  >
+                    <h1 className="one-post-date-day">
+                      {getDay(post.frontmatter.date)}
+                    </h1>
+                    <p className="one-post-date-month">
+                      {getMonth(post.frontmatter.date)}
+                    </p>
+                  </div>
+                  <header>
+                    <h1 className="title">
+                      {post.frontmatter.title}
+                    </h1>
+                    <h2 className="subtitle">
+                      {post.frontmatter.subtitle}
+                    </h2>
+                  </header>
+                </article>
               </Link>
             )
           })}

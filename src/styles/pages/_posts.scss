@@ -12,7 +12,7 @@
     }
 
     .one-post-date {
-        font-family: "PlayfairDisplay";
+        font-family: "PlayfairDisplay", "Georgia", serif;
         margin-right: 2em;
 
         @media #{$mobile-query}  {
@@ -29,17 +29,17 @@
         padding-top: 0.2em;
     }
 
-    .one-post-blurb {
+    header {
         margin-top: 0.7em;
         display: "flex"; 
         flex-direction: "column";
-    }
 
-    .one-post-blurb-title {
-        font-family: "PlayfairDisplay";
-    }
+        .title {
+            font-family: "PlayfairDisplay", "Georgia", serif;
+        }
 
-    .one-post-blurb-subtitle {
-        font-weight: normal;
+        .subtitle {
+            font-weight: normal;
+        }
     }
 }
