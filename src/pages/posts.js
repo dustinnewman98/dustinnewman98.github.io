@@ -48,10 +48,8 @@ export default function Posts({ data }) {
                     ? post.frontmatter.path
                     : `/posts${post.fields.slug}`
                 }
-                className="one-post"
-                style={{ display: "flex" }}
               >
-                <article>
+                <article className="one-post">
                   <div
                     className="one-post-date"
                     style={{
