@@ -1,33 +1,33 @@
 module.exports = {
   siteMetadata: {
-    title: 'Dustin Newman',
-    titleTemplate: '%s | Dustin Newman',
-    author: 'Dustin Newman',
-    description: 'Personal website by Dustin Newman.',
-    url: 'https://dustinnewman.io',
-    twitterUsername: '@dustinnewman98'
+    title: "Dustin Newman",
+    titleTemplate: "%s | Dustin Newman",
+    author: "Dustin Newman",
+    description: "Personal website by Dustin Newman.",
+    url: "https://dustinnewman.me",
+    twitterUsername: "@dustinnewman98",
   },
   plugins: [
-    'gatsby-plugin-react-helmet',
-    'gatsby-plugin-sass',
-    'gatsby-plugin-catch-links',
+    "gatsby-plugin-react-helmet",
+    "gatsby-plugin-sass",
+    "gatsby-plugin-catch-links",
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: "gatsby-source-filesystem",
       options: {
         path: `${__dirname}/src/posts`,
-        name: 'posts',
+        name: "posts",
       },
     },
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: "gatsby-source-filesystem",
       options: {
         path: `${__dirname}/src/projects`,
-        name: 'projects',
+        name: "projects",
       },
     },
-    'gatsby-remark-copy-linked-files',
-    'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp',
+    "gatsby-remark-copy-linked-files",
+    "gatsby-transformer-sharp",
+    "gatsby-plugin-sharp",
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -35,29 +35,29 @@ module.exports = {
           {
             resolve: `gatsby-remark-prismjs`,
             options: {
-              noInlineHighlight: true
-            }
+              noInlineHighlight: true,
+            },
           },
           {
             resolve: `gatsby-remark-footnotes`,
             options: {
               footnoteBackRefPreviousElementDisplay: "inline",
               footnoteBackRefDisplay: "inline",
-              footnoteBackRefInnerText: "[return]"
-            }
+              footnoteBackRefInnerText: "[return]",
+            },
           },
           {
-            resolve: 'gatsby-remark-images',
+            resolve: "gatsby-remark-images",
             options: {
               maxWidth: 1080,
             },
           },
-          "gatsby-remark-autolink-headers"
-        ]
-      }
+          "gatsby-remark-autolink-headers",
+        ],
+      },
     },
     {
-      resolve: 'gatsby-plugin-feed',
+      resolve: "gatsby-plugin-feed",
       options: {
         query: `
           {
@@ -103,9 +103,9 @@ module.exports = {
             `,
             output: "/rss.xml",
             title: "Dustin Newman's RSS Feed",
-          }
-        ]
-      }
+          },
+        ],
+      },
     },
     {
       resolve: "gatsby-plugin-manifest",
@@ -121,4 +121,4 @@ module.exports = {
       },
     },
   ],
-};
+}

@@ -4,7 +4,7 @@ https://keybase.io/dustinnewman98
 
 I hereby claim:
 
-  * I am an admin of https://dustinnewman.io
+  * I am an admin of https://dustinnewman.me
   * I am dustinnewman98 (https://keybase.io/dustinnewman98) on keybase.
   * I have a public key with fingerprint BCA1 4485 194F 16C2 A126  B41D 2E22 9680 8040 BA81
 
@@ -21,43 +21,56 @@ To do so, I am signing this object:
       "uid": "0452552ee75265ec284bdbe1779ba719",
       "username": "dustinnewman98"
     },
+    "merkle_root": {
+      "ctime": 1583202438,
+      "hash_meta": "2ec5dcf20c7ffdf12b56c8bdca6c06c1d7540a06b98e92b7c935667cbac5176a",
+      "seqno": 14929412
+    },
+    "revoke": {
+      "sig_ids": [
+        "a7edbed79417c9229429cb30cb47076cd8ed40a7bba1a61edc7570e8f32da62e0f"
+      ]
+    },
     "service": {
-      "hostname": "dustinnewman.io",
+      "hostname": "dustinnewman.me",
       "protocol": "https:"
     },
     "type": "web_service_binding",
     "version": 1
   },
-  "ctime": 1581490821,
+  "ctime": 1583202469,
   "expire_in": 157680000,
-  "prev": "771de2523102d3e517080056a9091bea9a431d2281dd017d1afe0188f1328682",
-  "seqno": 21,
+  "prev": "0efd056eee6dd0728606a321ae8d5eebce370578e8b8c2592a5bc577788b5773",
+  "seqno": 23,
   "tag": "signature"
 }
 
 which yields the signature:
 
 -----BEGIN PGP MESSAGE-----
-Version: Keybase OpenPGP v2.1.3
+Version: Keybase OpenPGP v2.1.13
 Comment: https://keybase.io/crypto
 
-yMIlAnicrVJbSFRBGD5baa52pYLSMDoYFUmdmXPmnDlrD1GkkZD6kBKZy8yZ2e2w
-69lt96xmZnShh6KyB6MbSOVDSBdEopvZTcGgK2VQVtBbQkVWVBKpzcl687F5Geb/
-v+/7//+bv3vyeCnTJ41EI+uetuzx3b9zOiVVrTqzt16mMVYnB+rlCP9z8SjjSTcY
-sZkckBWgAIPqJsIWMRCFDHGkKwTrgBFdoxZi2KIqt1SGqMkBpUCnispwiBsmCxlc
-1TVVIXK+HLKdME/EE7bjCllqEaBpGAFTCwHdggRAnWqAQQ6hqWMFK5pCCQaCuDmW
-9BiiOUqSfKkdEzHxCP5pbwz8f+47NSqnIYgQ5NxAUEfcglijjHJgGCYlBjA9YJIn
-HFLNBZqlkq7tOLy2mjgmlhvyZZGrsS3u2evNMwZudLB4IubGrFhUJDe7bjwZ8Mhu
-XdxD13Ia/KsTpLbDhKGCUcMTSTvmyAEgkJZre8IAYaCZCoYgX+Zb43aCB20PgQxh
-lTheHV4jJA0DMA4RVIECmcoRMISTCtKJqZiAcmISTRWfAjFgTPjJAAlxBWAcAirE
-OoayN9kWJyYHvFIuCQvNpB12iJtKcLnh7u3KCZIvU0pPG+dtmpTpn/Zv/6w5E0cq
-o2u+rGx7M9A5ryMj/eyD5bdL38oZ7ozvC5b5zz0/iapzL8/PaZw7/CYz/nVFRzl7
-8nihPbLxSpoxHCk6/4oMfxj62LneZz2/f7Dn1krc/gxf+/yrv+RTOK2vacfUu5Vb
-Nw0ueTz9aGnXjY6bRWqv3pM9rqFrgX+oYn9/oKTz2N59Bakfg7XS0PZlGT3f3j9U
-pANtp4ontRR8Kff3t9qRF4VSc47WHp8ZPwTD19dVYUdphhXFO9+vJcd/zm52+7ob
-OncNXq1rzH40kH8xq6Qp/fXgvbllSxbn5S7KO997pe8Cmt79MmvW26N7okem+A24
-+sSG3kvHdvNtZQPvDl8u/NDa9RtVYERx
-=69BO
+yMK+AnicrVNtiBVVGL675YrLGkIuhbWZE8Qmi5xzZs7HXEE2EaEPsmJpC9PL+Xjn
+3vHuvXOdmXs32d3S7MuiL5dIC0lw3R9JteCPvoQ2U3KTQBYzk1raIhPpQ/qzW6R1
+ZiuC8Gfz5zDnPO/zPO9z3nNk4RW51qbcH33luyb3bW86fnhrPbdxw/j+AUdFZouT
+H3DKMLdAn4EkLZRD4+QdhBHmivlUaMmpIoYCZUgKho1kntLUCK1c0K6hygesFGYK
+uUYEwH0TcHCZ5yLpdDlBWC1CXIvDampplZbY8wTFvhdgponEhCkPGwKE+EwggTyk
+pMC2sBQlWYU1p2QCK8LI7tmfwpy9y+D/Z9/1v+g8SiglAJwSRkET4SmjAHPuK8mx
+nwETiKuyAhZt6kkaVqvQX5FVXzhDXU4F4nIfFOIoSrOIdRpmQEyFSxDxXGHblEmp
+UIFUznVl/emAIM2DwASYKMq0UEZLphHT2HDqIYmY8gX4RHHtu5QxrpXUFHOW2U5g
+czWyCp5PfA8TayGGRlSGTD0Jiza9xMmvdyQH24bhFmNZbJYe8W0uSCuPI860EWCs
+FFdKYskwGM0pRyACl9gcCaDA2TCUqcWNUM+RZ9d1mRhW2J0upxZHaaSjPntYStNa
+ks+ySbfUMnQ/qMLfPAUVVo2dF1vRgDgJo6rtxCL/Exvzuxx4qBbGUAgzBOV2EuyX
+6UAjuzUIDKIMAJgxiBPBEJMuwRKEnQdQGlyOKBcglNCE+kRSOxmccyGUXdx/cySu
+9SmLltOGV5VpPQZn6PD4g1fmmlpzLfOas4eUa12w6J/n9f7w/Eu3XD96Yuq2bY/f
+OX7+wMXbJ/MzbVOz35ZbFjtnJsrHnhnpn7pDXzVc+OzVPc0PTx08eXrvrSNtu/2d
+8mjP86WO1zprS2aGm9duPXmo+O4XL+mDHSdWdyY9b/+wvX3fml8+vqbznfKL9zQ1
+8SdfOLBqeNd8r/T6wkvLz65Z2btrWf29ny4e6v3+1NiC7psqY6NvDbZM9sy7cP/I
+1FOlxrUTs19N3/jEmWn528zaN5btuDC6sb5t4hv99ZG4/djAueLe00vcwU3tj0Y7
+pp/tPX/DI49VxAOzn9xd++jcope/O7X75x83jy19czX5/ZX9yc3dKz9dd99M9+Dx
+lus+XPfBprF6R9vSq9c3Vn159uhz9+78/Olf/wSs8I1h
+=SxDg
 -----END PGP MESSAGE-----
 
 And finally, I am proving ownership of this host by posting or
@@ -66,4 +79,3 @@ appending to this document.
 View my publicly-auditable identity here: https://keybase.io/dustinnewman98
 
 ==================================================================
-
