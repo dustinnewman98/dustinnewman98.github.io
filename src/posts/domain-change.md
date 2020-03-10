@@ -4,9 +4,9 @@ subtitle: From an io to a no-go
 date: 2020-03-02
 ---
 
-What was formerly dustinnewman.io has now been moved to dustinnewman.me! This includes not just my posts, but also my subdomains (twitter.dustinnewman.io is now [twitter.dustinnewman.me](http://twitter.dustinnewman.me). 
+What was formerly dustinnewman.io has now been moved to dustinnewman.me! This includes not just my posts, but also my subdomains (twitter.dustinnewman.io is now [twitter.dustinnewman.me](http://twitter.dustinnewman.me)).
 
-I did this after reading that draw.io was moving to diagrams.net and after reading some [^1] good [^2] articles [^3] about the issue. My only shame is that this issue really broke in 2014 and I’m only just now hearing about it six years later! But better late than never and better my money go to the right people than the wrong. For this reason, I’ve chosen the me cc-TLD which goes to support the 
+I did this after reading that draw.io was moving to diagrams.net and after reading some [^1] good [^2] articles [^3] about the issue. My only shame is that this issue really broke in 2014 and I’m only just now hearing about it six years later! But better late than never and better my money go to the right people than the wrong. For this reason, I’ve chosen the me cc-TLD which goes to support the country of Montenegro. 
 
 [^1]: https://observer.com/2014/11/startups-your-cute-io-domain-name-supports-british-imperialism/
 
