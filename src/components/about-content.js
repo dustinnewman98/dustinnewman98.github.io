@@ -38,7 +38,7 @@ export default () => (
       <span aria-label="octopus" role="img">
         🐙
       </span>{" "}
-      <a href="https://github.com/dustinnewman98">GitHub</a>{" "}
+      <a href="https://github.com/dustinnewman">GitHub</a>{" "}
       <span aria-label="cat" role="img">
         🐱
       </span>

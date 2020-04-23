@@ -1,5 +1,5 @@
 {
-  "name": "dustinnewman98.github.io",
+  "name": "dustinnewman.github.io",
   "description": "My personal site",
   "version": "1.0.0",
   "author": "Dustin Newman",
@@ -44,6 +44,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/dustinnewman98/dustinnewman98.github.io.git"
+    "url": "https://github.com/dustinnewman/dustinnewman.github.io.git"
   }
 }
