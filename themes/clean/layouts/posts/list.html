@@ -1,0 +1,22 @@
+{{ define "main" }}
+    {{ partial "header.html" (dict "Text" .Params.title "Emoji" .Params.emoji )}}
+    {{ range .Pages }}
+    <a href="{{.Permalink}}">
+        <article class="post-item">
+            <aside class="date">
+                {{ $time := time (.Date) }}
+                <h1 class="day">
+                    {{ $time.Day }}
+                </h1>
+                <p class="month">
+                    {{ $time.Month }}
+                </p>
+            </aside>
+            <header>
+                <h1 class="title">{{ .Params.title }}</h1>
+                <h2 class="subtitle">{{ .Params.subtitle }}</h2>
+            </header>
+        </article>
+    </a>
+    {{ end }}
+{{ end }}

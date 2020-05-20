@@ -1,4 +1,4 @@
-name: Gatsby Publish
+name: Hugo Publish
 
 on:
   push:
@@ -9,8 +9,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - uses: enriikke/gatsby-gh-pages-action@v2
+      - uses: actions/checkout@v2
+
+      - uses: crazy-max/ghaction-hugo@v1
+
+      - uses: crazy-max/ghaction-github-pages@v2
         with:
-          access-token: ${{ secrets.ACCESS_TOKEN }}
-          deploy-branch: master
+          build_dir: public
+          target_branch: master
+        env:
+          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}

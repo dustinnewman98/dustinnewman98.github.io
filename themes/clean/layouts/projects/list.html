@@ -1,0 +1,40 @@
+{{ define "main" }}
+    {{ partial "header.html" (dict "Text" .Params.title "Emoji" .Params.emoji )}}
+    {{ range .Pages }}
+        <article class="project-item">
+            <div>
+                <a href="{{.Permalink}}">
+                    <h2 class="title">{{ .Params.title }}</h2>
+                </a>
+                <p class="subtitle">{{ .Params.subtitle }}</p>
+                <div class="info">
+                    <p>
+                        <span aria-label="bread" role="img">🍞</span>
+                        Role: {{ .Params.role }}
+                    </p>
+                    <p>
+                        <span aria-label="wizard" role="img">🧙</span>
+                        Worked with: {{ .Params.stack }}
+                    </p>
+                    {{ with .Params.github }}
+                    <p>
+                        <span aria-label="octopus" role="img">🐙</span>
+                        GitHub: <a href="https://www.github.com/{{ . }}">{{ . }}</a>
+                    </p>
+                    {{ end }}
+                    {{ with .Params.live }}
+                    <p>
+                        <span aria-label="sparkles" role="img">✨</span>
+                        Live at: <a href="{{ . }}">{{ . }}</a>
+                    </p>
+                    {{ end }}
+                </div>
+            </div>
+            {{ with .Resources.GetMatch .Params.image }}
+                <div class="frame">
+                    <img src="{{ .RelPermalink }}" />
+                </div>
+            {{ end }}
+        </article>
+        {{ end }}
+{{ end }}

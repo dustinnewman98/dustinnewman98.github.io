@@ -1,9 +1,0 @@
-@import 'mixins';
-
-@include font-face(Objectivity, '../assets/fonts/Objectivity-Regular', null, null, woff2, swap);
-@include font-face(Objectivity, '../assets/fonts/Objectivity-Bold', bold, null, woff2, swap);
-@include font-face(Objectivity, '../assets/fonts/Objectivity-RegularSlanted', null, italic, woff2, swap);
-@include font-face(Objectivity, '../assets/fonts/Objectivity-BoldSlanted', bold, italic, woff2, swap);
-@include font-face(PlayfairDisplay, '../assets/fonts/PlayfairDisplay-Regular', null, null, ttf, swap);
-@include font-face(PlayfairDisplay, '../assets/fonts/PlayfairDisplay-Bold', bold, null, ttf, swap);
-@include font-face(PlayfairDisplay, '../assets/fonts/PlayfairDisplay-Italic', null, italic, ttf, swap);

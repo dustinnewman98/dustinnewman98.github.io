@@ -1,0 +1,30 @@
+{{ define "main" }} 
+    {{ partial "header.html" (dict "Text" "About Me" "Emoji" .Params.emoji )}}
+
+    {{ .Content }}
+
+    {{ with .Site.Params.social }}
+    <p>
+        {{ $len := len . }}
+        {{ if eq $len 1 }}
+        You can find me on {{ partial "social_link.html" .}}
+        {{ else }}
+            {{ $last := sub $len 1 }}
+            You can find me on
+            {{ range first $last . }}
+            {{ partial "social_link.html" . }},
+            {{ end }}
+            or
+            {{- partial "social_link.html" (index . $last) -}}
+        {{ end }}
+        {{- with $.Site.Params.email -}}
+        , or shoot me an <a href="mailto:{{.email}}">email</a>. <span aria-label="mailbox" role="img">📬</span>
+        {{ else }}
+        .
+        {{ end }}
+    </p>
+    {{ end }}
+    <p>
+        {{ .Params.signature }}
+    </p>
+{{ end }}

@@ -1,0 +1,21 @@
+{{ define "main" }}
+<article class="post">
+    <h1 class="title">{{ .Title }}</h1>
+    <h2 class="subtitle">{{ .Params.subtitle }}</h2>
+    {{ with .Params.github }}
+    <p class="post-notes">
+        <span aria-label="octopus" role="img">🐙</span>
+        GitHub: <a href="https://www.github.com/{{ . }}">{{ . }}</a>
+    </p>
+    {{ end }}
+    {{ with .Params.live }}
+    <p class="post-notes">
+        <span aria-label="sparkles" role="img">✨</span>
+        Live at: <a href="{{ . }}">{{ . }}</a>
+    </p>
+    {{ end }}
+    <article class="content">
+        {{ .Content }}
+    </article>
+</article>
+{{ end }}
