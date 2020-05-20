@@ -280,6 +280,7 @@ p, li {
 /*****************************************************************************/
 @media only screen and (max-width : 800px) {
     main {
+        margin: auto;
         width: 90%;
     }
 
@@ -287,6 +288,10 @@ p, li {
     .post-item {
         flex-direction: column;
         align-items: flex-start;
+    }
+
+    .post-item {
+        justify-content: center;
     }
 
     .project-item .frame {
