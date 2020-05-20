@@ -26,6 +26,7 @@ url = "https://linkedin.com/in/dustinnewman98"
 [[params.social]]
 name = "Twitter"
 url = "https://twitter.com/dustinnewman98"
+username = "dustinnewman98"
 
 [params.email]
 email = "dustinnewman98@gmail.com"

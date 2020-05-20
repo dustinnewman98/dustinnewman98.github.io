@@ -1,2 +1,45 @@
 <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="stylesheet" href="{{ `css/style.css` | absURL }}" type="text/css" />
+
+<meta name="twitter:card" content="summary" />
+
+{{ if .IsHome }}
+<meta name="og:type" content="blog" />
+{{ else }}
+<meta name="og:type" content="article" />
+{{ end }}
+
+{{ with .Params.title }}
+<meta name="title" content="{{ . }}" />
+<meta name="twitter:title" content="{{ . }}" />
+<meta name="og:title" content="{{ . }}" />
+{{ end }}
+
+{{ with .Params.description }}
+<meta name="description" content="{{ . }}" />
+{{ end }}
+
+{{ with .Params.subtitle }}
+<meta name="twitter:description" content="{{ . }}" />
+<meta name="og:description" content="{{ . }}" />
+{{ end }}
+
+{{ with .Params.keywords }}
+<meta name="keywords" content="{{ . }}" />
+{{ end }}
+
+<meta name="author" content="{{ .Site.Title }}" />
+
+{{ range .Site.Params.social }}
+{{ if eq (index . "name") "Twitter" }}
+<meta name="twitter:creator" content='@{{ (index . "username") }}' />
+<meta name="twitter:site" content='@{{ (index . "username") }}' />
+{{ end }}
+{{ end }}
+
+{{ with .Params.image }}
+<meta name="twitter:image" content="{{ . | absURL }}" />
+<meta name="og:image" content="{{ . | absURL }}" />
+{{ end }}
