@@ -2,7 +2,7 @@
 title: This blog is built with Hugo
 subtitle: Lighter, faster, simpler
 description: Gatsby vs Hugo build times and development. 
-date: 2020-05-20T12:00:00-07:00
+date: 2020-05-19T12:00:00-07:00
 draft: false
 ---
 
