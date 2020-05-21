@@ -233,7 +233,7 @@ p, li {
 }
 
 .post img {
-    height: 100%;
+    max-width: 100%;
 }
 
 .post .post-notes {
@@ -315,5 +315,9 @@ p, li {
 @media only screen and (min-width: 801px) {
     .page-header h1 {
         margin-top: 2em;
+    }
+
+    .post img {
+        max-height: 100vh;
     }
 }
