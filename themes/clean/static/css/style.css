@@ -245,6 +245,7 @@ p, li {
 .project-item {
     width: 100%;
     display: flex;
+    word-break: break-word;
 }
 
 .project-item > * {
