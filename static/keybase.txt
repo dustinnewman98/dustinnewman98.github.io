@@ -1,81 +1,56 @@
 ==================================================================
-https://keybase.io/dustinnewman98
+https://keybase.io/dustinnewman
 --------------------------------------------------------------------
 
 I hereby claim:
 
   * I am an admin of https://dustinnewman.me
-  * I am dustinnewman98 (https://keybase.io/dustinnewman98) on keybase.
-  * I have a public key with fingerprint BCA1 4485 194F 16C2 A126  B41D 2E22 9680 8040 BA81
+  * I am dustinnewman (https://keybase.io/dustinnewman) on keybase.
+  * I have a public key ASC87pFB9FarQo1x9eyMOcWgIp5Ag5idJO7wp5RW8IH2JAo
 
 To do so, I am signing this object:
 
 {
   "body": {
     "key": {
-      "eldest_kid": "01017b6958ca75b2d5e560a861da64bc5d8cb3ec3d5b9e1bb16b03d8fe79df7e36430a",
-      "fingerprint": "bca14485194f16c2a126b41d2e2296808040ba81",
+      "eldest_kid": "01019260a746e88de258f057fe4e6dd6df89d80254905595bfa385295ba2a63ab0470a",
       "host": "keybase.io",
-      "key_id": "2e2296808040ba81",
-      "kid": "01017b6958ca75b2d5e560a861da64bc5d8cb3ec3d5b9e1bb16b03d8fe79df7e36430a",
-      "uid": "0452552ee75265ec284bdbe1779ba719",
-      "username": "dustinnewman98"
+      "kid": "0120bcee9141f456ab428d71f5ec8c39c5a0229e4083989d24eef0a79456f081f6240a",
+      "uid": "033d9ed8d4483bf8d040130f00810619",
+      "username": "dustinnewman"
     },
     "merkle_root": {
-      "ctime": 1583202438,
-      "hash_meta": "2ec5dcf20c7ffdf12b56c8bdca6c06c1d7540a06b98e92b7c935667cbac5176a",
-      "seqno": 14929412
-    },
-    "revoke": {
-      "sig_ids": [
-        "a7edbed79417c9229429cb30cb47076cd8ed40a7bba1a61edc7570e8f32da62e0f"
-      ]
+      "ctime": 1590112257,
+      "hash": "1d527ff8b1e21aa03256e0a1d3c47ab7a6600e18183a77e902539f2ecb1709b6a35d422ea226975f99512fff6807a88d59b78f941216c8fd670783e0519e1378",
+      "hash_meta": "428ddfedb8e016f9c8719856aba3f3daf04f9df558a0a3fc85fddb4273f0a1a7",
+      "seqno": 16373111
     },
     "service": {
+      "entropy": "WtCUwU+uEK6hG9afjV2MeHOQ",
       "hostname": "dustinnewman.me",
       "protocol": "https:"
     },
     "type": "web_service_binding",
-    "version": 1
+    "version": 2
   },
-  "ctime": 1583202469,
-  "expire_in": 157680000,
-  "prev": "0efd056eee6dd0728606a321ae8d5eebce370578e8b8c2592a5bc577788b5773",
-  "seqno": 23,
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.4.2"
+  },
+  "ctime": 1590112303,
+  "expire_in": 504576000,
+  "prev": "ccb1e7720139587ccce4d1a590d96b17bb93bec060b4d9cd0220aa19829a64bb",
+  "seqno": 6,
   "tag": "signature"
 }
 
 which yields the signature:
 
------BEGIN PGP MESSAGE-----
-Version: Keybase OpenPGP v2.1.13
-Comment: https://keybase.io/crypto
-
-yMK+AnicrVNtiBVVGL675YrLGkIuhbWZE8Qmi5xzZs7HXEE2EaEPsmJpC9PL+Xjn
-3vHuvXOdmXs32d3S7MuiL5dIC0lw3R9JteCPvoQ2U3KTQBYzk1raIhPpQ/qzW6R1
-ZiuC8Gfz5zDnPO/zPO9z3nNk4RW51qbcH33luyb3bW86fnhrPbdxw/j+AUdFZouT
-H3DKMLdAn4EkLZRD4+QdhBHmivlUaMmpIoYCZUgKho1kntLUCK1c0K6hygesFGYK
-uUYEwH0TcHCZ5yLpdDlBWC1CXIvDampplZbY8wTFvhdgponEhCkPGwKE+EwggTyk
-pMC2sBQlWYU1p2QCK8LI7tmfwpy9y+D/Z9/1v+g8SiglAJwSRkET4SmjAHPuK8mx
-nwETiKuyAhZt6kkaVqvQX5FVXzhDXU4F4nIfFOIoSrOIdRpmQEyFSxDxXGHblEmp
-UIFUznVl/emAIM2DwASYKMq0UEZLphHT2HDqIYmY8gX4RHHtu5QxrpXUFHOW2U5g
-czWyCp5PfA8TayGGRlSGTD0Jiza9xMmvdyQH24bhFmNZbJYe8W0uSCuPI860EWCs
-FFdKYskwGM0pRyACl9gcCaDA2TCUqcWNUM+RZ9d1mRhW2J0upxZHaaSjPntYStNa
-ks+ySbfUMnQ/qMLfPAUVVo2dF1vRgDgJo6rtxCL/Exvzuxx4qBbGUAgzBOV2EuyX
-6UAjuzUIDKIMAJgxiBPBEJMuwRKEnQdQGlyOKBcglNCE+kRSOxmccyGUXdx/cySu
-9SmLltOGV5VpPQZn6PD4g1fmmlpzLfOas4eUa12w6J/n9f7w/Eu3XD96Yuq2bY/f
-OX7+wMXbJ/MzbVOz35ZbFjtnJsrHnhnpn7pDXzVc+OzVPc0PTx08eXrvrSNtu/2d
-8mjP86WO1zprS2aGm9duPXmo+O4XL+mDHSdWdyY9b/+wvX3fml8+vqbznfKL9zQ1
-8SdfOLBqeNd8r/T6wkvLz65Z2btrWf29ny4e6v3+1NiC7psqY6NvDbZM9sy7cP/I
-1FOlxrUTs19N3/jEmWn528zaN5btuDC6sb5t4hv99ZG4/djAueLe00vcwU3tj0Y7
-pp/tPX/DI49VxAOzn9xd++jcope/O7X75x83jy19czX5/ZX9yc3dKz9dd99M9+Dx
-lus+XPfBprF6R9vSq9c3Vn159uhz9+78/Olf/wSs8I1h
-=SxDg
------END PGP MESSAGE-----
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgvO6RQfRWq0KNcfXsjDnFoCKeQIOYnSTu8KeUVvCB9iQKp3BheWxvYWTESpcCBsQgzLHncgE5WHzM5NGlkNlrF7uTvsBgtNnNAiCqGYKaZLvEIFjtuMVfro9fRINBkCEOJ6I1LIU07eYX1pVCK+Y7C8dPAgHCo3NpZ8RAE/MCz/sx5wUJhhnxNKFzz7qcvsRYE1UXnikMOPG3MKwNLIVc8eyX3g7TzaEidockWntsacivTMxf2gblDXSaDqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIMAOc7Z2l/2GxzkqL6WfM6Ico40aqNo+5VDYrrqYliyNo3RhZ80CAqd2ZXJzaW9uAQ==
 
 And finally, I am proving ownership of this host by posting or
 appending to this document.
 
-View my publicly-auditable identity here: https://keybase.io/dustinnewman98
+View my publicly-auditable identity here: https://keybase.io/dustinnewman
 
 ==================================================================

@@ -14,7 +14,7 @@
             {{ range first $last . }}
             {{ partial "social_link.html" . }},
             {{ end }}
-            or
+            and
             {{- partial "social_link.html" (index . $last) -}}
         {{ end }}
         {{- with $.Site.Params.email -}}
@@ -22,9 +22,16 @@
         {{ else }}
         .
         {{ end }}
+        {{ range . }}
+            {{ if eq .name "PGP"}}
+            My PGP fingerprint is <code>{{.username}}</code>.
+            {{ end }}
+        {{ end }}
     </p>
     {{ end }}
+    {{ if .Params.signature }}
     <p>
-        {{ .Params.signature }}
+        {{ . }}
     </p>
+    {{ end }}
 {{ end }}

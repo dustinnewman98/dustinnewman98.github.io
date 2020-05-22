@@ -1,7 +1,6 @@
 ---
 title: "About Me"
 emoji: "👨🏼‍💻"
-signature: "Thanks! 😄"
 ---
 
 Hi there! <span aria-label="hand-wave" role="img">👋</span>

@@ -1,9 +1,13 @@
 {{ if eq .name "GitHub"}}
-<span aria-label="octopus" role="img">🐙</span> <a href="{{.url}}">GitHub</a> <span aria-label="cat" role="img">🐱</span>
+<a href="{{.url}}">GitHub</a> <span aria-label="octopus" role="img">🐙</span>
 {{- else }}
 {{ if eq .name "Twitter" }}
 <a href="{{.url}}">Twitter</a> <span aria-label="bird" role="img">🐥</span>
 {{- else }}
+{{ if eq .name "PGP" }}
+my PGP key <a href="{{.url}}">here</a> <span aria-label="closed lock with key" role="img">🔐</span>
+{{ else}}
 <a href="{{.url}}">{{.name}}</a>
+{{ end }}
 {{- end }}
 {{- end }}
