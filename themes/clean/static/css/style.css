@@ -13,6 +13,10 @@
     --accent-color: #fc7b1b;
     --light-accent: #e99d5d;
   }
+
+  .post img {
+      filter: brightness(0.75);
+  }
 }
 
 @font-face {
