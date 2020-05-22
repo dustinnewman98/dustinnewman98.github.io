@@ -11,10 +11,6 @@
     --bg-color: #151212;
     --text-color: #fcfcfc;
   }
-
-  .post img {
-      filter: brightness(0.75);
-  }
 }
 
 @font-face {
