@@ -3,6 +3,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="stylesheet" href="{{ `css/style.css` | absURL }}" type="text/css" />
 
+{{ with .Params.title }}
+{{ if $.IsHome }}
+<title>{{ $.Site.Title }}</title>
+{{ else }}
+<title>{{ . }} | {{ $.Site.Title }}</title>
+{{ end }}
+{{ end }}
+
 <meta name="twitter:card" content="summary" />
 
 {{ if .IsHome }}
