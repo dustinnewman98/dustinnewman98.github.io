@@ -2,15 +2,16 @@
   color-scheme: light dark;
   --bg-color: #fcfcff;
   --text-color: #000000;
-  --dark-gray: #333333;
   --accent-color: #1b9cfc;
   --light-accent: #5da9e9;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg-color: #121212;
+    --bg-color: #151212;
     --text-color: #fcfcfc;
+    --accent-color: #fc7b1b;
+    --light-accent: #e99d5d;
   }
 }
 
