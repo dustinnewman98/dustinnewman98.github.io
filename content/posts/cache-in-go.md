@@ -168,9 +168,11 @@ func TestRemove(t *testing.T) {
 }
 ```
 
-We once again pay homage to Apple/apples and make sure our code is up to par. In case you're wondering, Go's `delete` function is just a no-op (no operation) if the key does not exist already. If you wanted to provide more information to our caller, you could check if the key was present at all and return false if not, only returning true if the key was actually removed. For now, we'll just stick to this. If ICANN has any problems with this, my GitHub issues box is always open after all.
+We once again pay homage to Apple/apples and make sure our code is up to par. In case you're wondering, Go's `delete` function is just a no-op (no operation) if the key does not exist already. If you wanted to provide more information to our caller, you could check if the key was present at all and return false if not, only returning true if the key was actually removed. For now, we'll just stick to this. If ICANN has any problems with this, my GitHub issues box is always open.
 
 Now, what about all this trouble we went to to make sure our code was thread-safe? Was it all in vain? No! It's actually a runtime error in Go if you try to simultaneously read and write to a map. As long as our `Threaded` constant is true, this never happens because, well frankly our code is just single-threaded, so there's no risk, but more generally because, until now, `Threaded` *has* been true. We want to test that all our effort to thread-proof our code actually pays off, but how? How do we force a simultaneous read and write?
+
+*/JEOPARDY THEME MUSIC/*
 
 It turns out there's no real robust way to do this, but we can realistically guarantee this by putting reads and writes into an infinite loop in two separate goroutines. Open that test file back up!
 
