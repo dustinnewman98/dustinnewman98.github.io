@@ -76,6 +76,10 @@ h1, h2, h3, h4, h5, h6, blockquote {
     margin: 0;
 }
 
+pre code {
+    white-space: pre;
+}
+
 body a {
     border-bottom: 1px solid var(--accent-color);
     box-shadow: inset 0 -2px 0px 0px var(--accent-color);
