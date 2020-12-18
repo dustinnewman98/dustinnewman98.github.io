@@ -27,8 +27,7 @@ int max_profit(std::vector<int> prices) {
 Great! But my DRY detector is kicking in and it is not happy with that repetition of `prices[i - 1]` business. It’s ugly! Amateur even! Are you sure you’re a *real* computer programmer? Uh-oh, now imposter syndrome is chiming in too. This is getting out of hand. Luckily, I have just the clever one-liner to satisfy them both (for now).
 
 ```cpp
-
-include <vector>
+#include <vector>
 
 int max_profit(std::vector<int> prices) {
     int r = 0;
