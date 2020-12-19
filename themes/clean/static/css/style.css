@@ -326,7 +326,8 @@ p, li {
         max-height: 100vh;
     }
 
-    .post-item, .project-item {
+    .post-item .date,
+    .project-item .date {
         margin-right: 2em;
     }
 }
