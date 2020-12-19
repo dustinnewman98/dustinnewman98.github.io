@@ -38,4 +38,4 @@ url = "/dustinnewman.asc"
 username = "FF25 D517 1FB6 BF64 88CC  F053 C813 6331 96AB A26B"
 
 [markup.highlight]
-style = "dracula"
+style = "monokai"
