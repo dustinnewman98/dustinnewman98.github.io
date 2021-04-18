@@ -15,27 +15,5 @@ url = "/posts"
 name = "projects"
 url = "/projects"
 
-[[params.social]]
-name = "Twitter"
-url = "https://twitter.com/dustinnewman98"
-username = "dustinnewman98"
-
-[[params.social]]
-name = "GitHub"
-url = "https://github.com/dustinnewman"
-
-[[params.social]]
-name = "Keybase"
-url = "https://keybase.io/dustinnewman"
-
-[[params.social]]
-name = "LinkedIn"
-url = "https://linkedin.com/in/dustinnewman98"
-
-[[params.social]]
-name = "PGP"
-url = "/dustinnewman.asc"
-username = "FF25 D517 1FB6 BF64 88CC  F053 C813 6331 96AB A26B"
-
 [markup.highlight]
 style = "monokai"

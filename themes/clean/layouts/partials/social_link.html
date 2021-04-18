@@ -1,12 +1,12 @@
-{{ if eq .name "GitHub"}}
-<a href="{{.url}}">GitHub</a> 🐙
+{{ if eq .name "GitHub" }}
+<a href="{{.url}}">GitHub</a>
 {{- else }}
 {{ if eq .name "Twitter" }}
-<a href="{{.url}}">Twitter</a> 🐥
+<a href="{{.url}}">Twitter</a>
 {{- else }}
 {{ if eq .name "PGP" }}
 my PGP key <a href="{{.url}}">here</a> 🔐
-{{ else}}
+{{- else}}
 <a href="{{.url}}">{{.name}}</a>
 {{ end }}
 {{- end }}
