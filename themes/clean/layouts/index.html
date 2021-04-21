@@ -1,9 +1,0 @@
-{{ define "main" }} 
-    {{ partial "header.html" (dict "Text" "About Me" "Emoji" .Params.emoji )}}
-    {{ .Content }}
-    {{ if .Params.signature }}
-    <p>
-        {{ . }}
-    </p>
-    {{ end }}
-{{ end }}

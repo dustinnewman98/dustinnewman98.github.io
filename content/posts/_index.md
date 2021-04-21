@@ -1,4 +1,3 @@
 ---
-title: "My Posts"
-emoji: "💌"
+title: "My Posts 💌"
 ---

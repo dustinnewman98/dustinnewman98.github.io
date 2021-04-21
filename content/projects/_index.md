@@ -1,4 +1,3 @@
 ---
-title: "My Projects"
-emoji: "🤖"
+title: "My Projects 🤖"
 ---

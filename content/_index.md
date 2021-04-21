@@ -1,6 +1,5 @@
 ---
-title: "About Me"
-emoji: "👨🏼‍💻"
+title: "About Me 👨🏼‍💻"
 ---
 
 Hi there! 👋

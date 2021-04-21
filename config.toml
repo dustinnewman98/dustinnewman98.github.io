@@ -1,18 +1,14 @@
 baseURL = "https://dustinnewman.me"
 languageCode = "en-us"
 title = "Dustin Newman"
-theme = "clean"
+theme = "paper"
 
 [[menu.main]]
-name = "home"
-url = "/"
-
-[[menu.main]]
-name = "posts"
+name = "Posts"
 url = "/posts"
 
 [[menu.main]]
-name = "projects"
+name = "Projects"
 url = "/projects"
 
 [markup.highlight]

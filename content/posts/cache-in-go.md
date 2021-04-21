@@ -46,7 +46,6 @@ const Threaded = true
 
 I don't know about you, but when I think of cache operations (as I often do of course), I think of "get" and "set." Without these, it's hard to imagine much use for a cache (except maybe to brag about how you're using a cache). So, let's actually implement these in a thread-safe way.
 
-
 ```go
 func (c *Cache) Get(k Key) (Value, bool) {
     if Threaded {
@@ -76,7 +75,7 @@ func (c *Cache) Set(k Key, v Value) {
 }
 ```
 
-I'm mirroring Go's own `map` API inside "get", which should help keep the cache reasonably Go-y. Great! But wait, how does someone actually use our cache? Do they need to physically type out ampersand-Capital C-a-c-h-e all by their lonesome selves? Barbaric! Let's give our lovely users a nice `New` function, in typical Go module fashion. 
+I'm mirroring Go's own `map` API inside "get", which should help keep the cache reasonably Go-y. Great! But wait, how does someone actually use our cache? Do they need to physically type out ampersand-Capital C-a-c-h-e all by their lonesome selves? Barbaric! Let's give our lovely users a nice `New` function, in typical Go module fashion.
 
 ```go
 func New() *Cache {
@@ -99,7 +98,7 @@ import (
 )
 ```
 
-We want to test the most basic functionality first *i.e.* setting and getting (in that order!). Go testing works by running the `go test` command and any function starting with `Test` (capital T, of course) will be run and passed a testing struct `T`. If you need a little hint as to what we can test our cache for, I gave some examples above: a DNS cache!
+We want to test the most basic functionality first _i.e._ setting and getting (in that order!). Go testing works by running the `go test` command and any function starting with `Test` (capital T, of course) will be run and passed a testing struct `T`. If you need a little hint as to what we can test our cache for, I gave some examples above: a DNS cache!
 
 ```go
 func TestBasic(t *testing.T) {
@@ -108,7 +107,7 @@ func TestBasic(t *testing.T) {
 
     ip, exists := dns.Get("apple.com")
     if !exists {
-        t.Error("apple.com was not found")
+        t.Error("apple.com was not found apple.com was not found apple.com was not found apple.com was not found apple.com was not found")
     }
     if ip == nil {
         t.Error("dns[apple.com] is nil")
@@ -170,9 +169,9 @@ func TestRemove(t *testing.T) {
 
 We once again pay homage to Apple/apples and make sure our code is up to par. In case you're wondering, Go's `delete` function is just a no-op (no operation) if the key does not exist already. If you wanted to provide more information to our caller, you could check if the key was present at all and return false if not, only returning true if the key was actually removed. For now, we'll just stick to this. If ICANN has any problems with this, my GitHub issues box is always open.
 
-Now, what about all this trouble we went to to make sure our code was thread-safe? Was it all in vain? No! It's actually a runtime error in Go if you try to simultaneously read and write to a map. As long as our `Threaded` constant is true, this never happens because, well frankly our code is just single-threaded, so there's no risk, but more generally because, until now, `Threaded` *has* been true. We want to test that all our effort to thread-proof our code actually pays off, but how? How do we force a simultaneous read and write?
+Now, what about all this trouble we went to to make sure our code was thread-safe? Was it all in vain? No! It's actually a runtime error in Go if you try to simultaneously read and write to a map. As long as our `Threaded` constant is true, this never happens because, well frankly our code is just single-threaded, so there's no risk, but more generally because, until now, `Threaded` _has_ been true. We want to test that all our effort to thread-proof our code actually pays off, but how? How do we force a simultaneous read and write?
 
-*/JEOPARDY THEME MUSIC/*
+_/JEOPARDY THEME MUSIC/_
 
 It turns out there's no real robust way to do this, but we can realistically guarantee this by putting reads and writes into an infinite loop in two separate goroutines. Open that test file back up!
 
@@ -218,7 +217,8 @@ FAIL	gocache	1.015s
 
 Yes! I've never been so happy to see FAIL in all-caps. We successfully triggered a simultaneous read-write error because our cache was no longer synchronized behind its read-write mutex. Now, go change `Threaded` back to true before the internet explodes.
 
-There you have it! We're ready to be the backbone of the internet. All we need is some buyers. But in the meantime, you can brag about your thread-safe cache in Go and maybe add some more features to be competitive in the cache market. 
+There you have it! We're ready to be the backbone of the internet. All we need is some buyers. But in the meantime, you can brag about your thread-safe cache in Go and maybe add some more features to be competitive in the cache market.
 
-[^1]: Package maintainers need to maintain a separate file path for each major release, so beyond the development burden, there is nothing stopping someone from removing old versions accidentally or otherwise. Package users need to manually update each import of the package to the new major version. Go in general compromises between centralization and decentralization, pleasing no one. At least with NPM, everything is centralized and thus organized. They could theoretically prevent left-pad if they wanted to. Go is supposedly decentralized, but then requires that each new version control system is manually added (subject to maintainer approval and the PR process) into `go get` and pkg.go.dev. So, one of the bragging points of Go's dependency system is that you can host your modules anywhere; it doesn't have to be on their servers. Yet, when you actually want to, say, host on Gogs, you can't because the Google maintainers have not updated their whitelist. It seems more to me that the "decentralized" claim is more about freeing up server space while still allowing Google oversight of which package sites are supported.
-[^2]: @ Go community, please don't eviscerate my digestive system for mentioning generics. I promise I won't do it again.
+[^1]:
+    Package maintainers need to maintain a separate file path for each major release, so beyond the development burden, there is nothing stopping someone from removing old versions accidentally or otherwise. Package users need to manually update each import of the package to the new major version. Go in general compromises between centralization and decentralization, pleasing no one. At least with NPM, everything is centralized and thus organized. They could theoretically prevent left-pad if they wanted to. Go is supposedly decentralized, but then requires that each new version control system is manually added (subject to maintainer approval and the PR process) into `go get` and pkg.go.dev. So, one of the bragging points of Go's dependency system is that you can host your modules anywhere; it doesn't have to be on their servers. Yet, when you actually want to, say, host on Gogs, you can't because the Google maintainers have not updated their whitelist. It seems more to me that the "decentralized" claim is more about freeing up server space while still allowing Google oversight of which package sites are supported.
+    [^2]: @ Go community, please don't eviscerate my digestive system for mentioning generics. I promise I won't do it again.
