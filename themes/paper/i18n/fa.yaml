@@ -1,0 +1,19 @@
+- id: prev_page
+  translation: "صفحه قبلی"
+
+- id: next_page
+  translation: "صفحه بعدی"
+
+- id: read_time
+  translation:
+    one: ""
+    other: "دقیقه {{ .Count }}"
+
+- id: toc
+  translation: "فهرست محتوا"
+
+- id: translations
+  translation: ""
+
+- id: home
+  translation: ""
