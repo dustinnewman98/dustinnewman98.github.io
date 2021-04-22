@@ -8,4 +8,4 @@ My name is Dustin and I'm a software engineer at [Apple](https://apple.com) 🍎
 
 I graduated from [UCLA](https://ucla.edu) 🐻 with a Bachelor’s in Linguistics and Computer Science 🌳.
 
-You can find me on [GitHub](https://github.com/dustinnewman) and [Keybase](https://keybase.com/dustinnewman). My [PGP key](/dustinnewman.asc) 🔐 and fingerprint: `FF25 D517 1FB6 BF64 88CC F053 C813 6331 96AB A26B`.
+You can find me on [GitHub](https://github.com/dustinnewman) and [Keybase](https://keybase.io/dustinnewman). My [PGP key](/dustinnewman.asc) 🔐 and fingerprint: `FF25 D517 1FB6 BF64 88CC F053 C813 6331 96AB A26B`.
