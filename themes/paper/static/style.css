@@ -12,7 +12,7 @@
   --gap: 24px;
   --content-gap: 30px;
   --nav-width: 1024px;
-  --main-width: 640px;
+  --main-width: 700px;
   --header-height: 60px;
   --footer-height: 60px;
   --radius: 8px;
@@ -41,6 +41,12 @@
     --hljs-bg: #2e2e33;
     --code-bg: #37383e;
     --border: #5b5d67;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  :root {
+    --gap: 12px;
   }
 }
 
@@ -276,8 +282,8 @@ img {
 }
 .post-title {
   margin-bottom: 2px;
-  font-size: 40px;
   transform: translateX(-2px);
+  font-size: 40px;
 }
 .post-meta {
   color: var(--secondary);
@@ -302,7 +308,7 @@ img {
   margin-bottom: 16px;
 }
 .post-content h1 {
-  font-size: 40px;
+  font-size: 36px;
 }
 .post-content h2 {
   font-size: 32px;
