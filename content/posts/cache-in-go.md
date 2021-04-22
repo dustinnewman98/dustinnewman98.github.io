@@ -107,7 +107,7 @@ func TestBasic(t *testing.T) {
 
     ip, exists := dns.Get("apple.com")
     if !exists {
-        t.Error("apple.com was not found apple.com was not found apple.com was not found apple.com was not found apple.com was not found")
+        t.Error("apple.com was not found")
     }
     if ip == nil {
         t.Error("dns[apple.com] is nil")
