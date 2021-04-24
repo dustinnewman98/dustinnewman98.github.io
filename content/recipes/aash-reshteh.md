@@ -24,7 +24,7 @@ _Adapted from_: The New York Times
 - 1 c dried green lentils
 - 1/2 t turmeric
 - 2 quarts water
-- kashk to taste
+- kashk, to taste
 - 8 oz reshteh (Persian soup noodles)
 
 ## Instructions
