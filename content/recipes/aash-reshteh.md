@@ -1,7 +1,7 @@
 ---
 title: "Aash Reshteh (اش رشته)"
 date: 2021-04-23T21:03:21-07:00
-draft: true
+draft: false
 ---
 
 _Adapted from_: The New York Times
