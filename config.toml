@@ -11,5 +11,9 @@ url = "/posts"
 name = "Projects"
 url = "/projects"
 
+[[menu.main]]
+name = "Recipes"
+url = "/recipes"
+
 [markup.highlight]
 style = "monokai"

@@ -6,14 +6,14 @@
 
 - id: read_time
   translation:
-    one: ""
-    other: "دقیقه {{ .Count }}"
+    one: "1 دقیقه"
+    other: "{{ .Count }} دقیقه"
 
 - id: toc
-  translation: "فهرست محتوا"
+  translation: "فهرست مطالب"
 
 - id: translations
-  translation: ""
+  translation: "ترجمه‌ها"
 
 - id: home
   translation: ""
