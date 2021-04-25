@@ -1,7 +1,7 @@
 ---
 title: "Real CS Curriculum"
 subtitle: "From Turing to terminal"
-date: 2021-04-2416:06:21-0700
+date: 2021-04-24T16:06:21-07:00
 draft: false
 ---
 
