@@ -1,7 +1,7 @@
 ---
 title: "Does Twitter invite outrage?"
 subtitle: "Yes."
-date: 2021-05-04T18:03:46-07:00
+date: 2021-05-05T20:03:46-07:00
 draft: false
 ---
 
