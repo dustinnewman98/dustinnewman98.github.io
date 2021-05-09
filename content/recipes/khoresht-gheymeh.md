@@ -7,7 +7,7 @@ draft: false
 ## Ingredients
 
 - 1/2 lbs stew meat (lamb or beef)
-- 3/4 c yellow split peas, soaked in water
+- 1 c yellow split peas, soaked in water
 - 1 medium onion, minced
 - 5 tbps tomato paste
 - 2-3 dried limes, or 2 tbsp lemon juice
