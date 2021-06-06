@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/dustinnewman
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://dustinnewman.me
+  * I am dustinnewman (https://keybase.io/dustinnewman) on keybase.
+  * I have a public key ASC87pFB9FarQo1x9eyMOcWgIp5Ag5idJO7wp5RW8IH2JAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01019260a746e88de258f057fe4e6dd6df89d80254905595bfa385295ba2a63ab0470a",
+      "host": "keybase.io",
+      "kid": "0120bcee9141f456ab428d71f5ec8c39c5a0229e4083989d24eef0a79456f081f6240a",
+      "uid": "033d9ed8d4483bf8d040130f00810619",
+      "username": "dustinnewman"
+    },
+    "merkle_root": {
+      "ctime": 1590112257,
+      "hash": "1d527ff8b1e21aa03256e0a1d3c47ab7a6600e18183a77e902539f2ecb1709b6a35d422ea226975f99512fff6807a88d59b78f941216c8fd670783e0519e1378",
+      "hash_meta": "428ddfedb8e016f9c8719856aba3f3daf04f9df558a0a3fc85fddb4273f0a1a7",
+      "seqno": 16373111
+    },
+    "service": {
+      "entropy": "WtCUwU+uEK6hG9afjV2MeHOQ",
+      "hostname": "dustinnewman.me",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.4.2"
+  },
+  "ctime": 1590112303,
+  "expire_in": 504576000,
+  "prev": "ccb1e7720139587ccce4d1a590d96b17bb93bec060b4d9cd0220aa19829a64bb",
+  "seqno": 6,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgvO6RQfRWq0KNcfXsjDnFoCKeQIOYnSTu8KeUVvCB9iQKp3BheWxvYWTESpcCBsQgzLHncgE5WHzM5NGlkNlrF7uTvsBgtNnNAiCqGYKaZLvEIFjtuMVfro9fRINBkCEOJ6I1LIU07eYX1pVCK+Y7C8dPAgHCo3NpZ8RAE/MCz/sx5wUJhhnxNKFzz7qcvsRYE1UXnikMOPG3MKwNLIVc8eyX3g7TzaEidockWntsacivTMxf2gblDXSaDqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIMAOc7Z2l/2GxzkqL6WfM6Ico40aqNo+5VDYrrqYliyNo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/dustinnewman
+
+==================================================================
