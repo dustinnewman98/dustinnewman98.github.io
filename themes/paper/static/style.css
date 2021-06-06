@@ -300,6 +300,12 @@ img {
   margin-top: 32px;
   margin-bottom: 24px;
 }
+h2.post-subtitle {
+    font-weight: normal;
+    font-size: 18px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
 .post-content h3,
 .post-content h4,
 .post-content h5,
